@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar  navbar-dark  navbar-expand-lg " >
     <div class="container-fluid">
         <a class="navbar-brand" href="/home">
-            Sportcenter
+            <img src="/img/logo.png" width="70%" >
         </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -9,23 +9,24 @@
 
 
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav">  
                 <li class="nav-item">
-                    <a class="nav-link active" href="/home">home</a>
+                    <a class="nav-link " href="/home">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/categories">sportapparaat</a>
+                    <a class="nav-link" href="/categories">SPORTAPPARAAT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="#">registreren</a>
+                    <a class="nav-link"  href="#">REGISTREREN</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
                 </li>
+
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">inloggen</a>
+                    <a class="nav-link" href="#"> <button class="btn ">INLOGGEN</button> </a>
                 </li>
             </ul>
         </div>

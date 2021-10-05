@@ -4,11 +4,20 @@
     include_once('defaults/head.php');
     ?>
     <body>
-        <div class="container-fluid">
+        <div class="cont1 container-fluid">
+            <div class="row no-gutters">
+
             <?php
             include_once ('defaults/header.php');
             include_once ('defaults/menu.php');
             include_once ('defaults/pictures.php');
+            include_once ('defaults/equipment.php');
+            include_once ('defaults/membership.php');
+            include_once ('defaults/reviews.php');
+            include_once ('defaults/info.php');
+            include_once ('defaults/socialm.php');
+            
+
             ?>
 
             <h4>Sportcenter HealthOne</h4>
@@ -20,7 +29,7 @@
             include_once ('defaults/footer.php');
             ?>
         </div>
-
-        <script src="/js/script.js"></script>
+            </div> 
+        
     </body>
 </html>

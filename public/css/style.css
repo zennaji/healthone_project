@@ -1,43 +1,212 @@
-
-
-
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
-   
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
-
-
-.container-fluid {
-
-
-    
+.cont1 {
+  background-color: rgb(0, 0, 0);
 }
-    
+.nav-link {
+  color: white;
+}
 
 .pull-right img-thumbnail {
-    margin-top: -10px;
-    margin-bottom: 10px
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .header-row {
-    margin-top: 20px
+  margin-top: 20px;
 }
 
 .banner-img {
-    margin-bottom: 20px
+  background-attachment: fixed;
 }
 
 .navbar {
-    margin-bottom: 0;
-    background-color: blue;
-
+  margin-bottom: 100;
 }
 
 .product-img {
-    width: 70%;
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  border-color: white;
+}
+.btn {
+  background-color: #dc4e68;
+  color: white;
+  border-radius: 0%;
+}
+
+.jumbotron-hero {
+  color: white;
+  background-image: url("./../img/hero.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+.con1 {
+  height: 80vh;
+}
+.hero-container {
+  position: relative;
+  width: 330px;
+  top: 14%;
+  left: 50%;
+}
+.hero-txt1 {
+  font-size: 70px;
+}
+.hero-txt2 {
+  font-size: 70px;
+}
+.one-txt {
+  color: #dc4e68;
+  -webkit-text-stroke: 1px white;
+}
+.wl-btn {
+  background: transparent;
+  height: 38px;
+  border: 2px solid white;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  width: 120px;
+  padding: 0px !important;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.equipment-container h1 {
+  text-align: center;
+  font-size: 70px;
+  padding: 50px;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.ju-btn {
+  background: transparent;
+  height: 38px;
+  border: 2px solid white;
+  text-align: center;
+  width: 130px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.equipment-container {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 40px 20px;
+  height: 7 0vh;
+}
+
+.j1,
+.j2,
+.j3,
+.j4 {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20%;
+  background-size: 100%;
+  border: 4px #dc4e68 solid;
+}
+.j1 {
+  background-image: url("./../img/rowing-machin.jpg");
+}
+.j2 {
+  background-image: url("./../img/Crosstrainer.jpg");
+}
+.j3 {
+  background-image: url("./../img/hometrainer.jpg");
+}
+.j4 {
+  background-image: url("./../img/treadmill.jpg");
+}
+
+/* MEMBERSHIP CSS */
+
+.membership-container h1,
+.membership-container h1 span {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+.membership-container h1 span {
+  color: #dc4e68;
+  font-size: 60px;
+}
+.membership-container p {
+  color: #fff;
+  font-size: 25px;
+}
+
+.membership-container {
+  background-color: rgb(209, 187, 63);
+  height: 950px;
+}
+
+.properties__card {
+  background-color: orchid;
+  width: 25vw;
+  height: 60vh;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid orchid;
+}
+.membership-cards {
+  height: 60vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.single-features {
+  display: flex;
+  padding: 10px 30px;
+}
+.single-features .features-icon {
+  padding: 10px;
+}
+/* reviews css */
+.reviews-container {
+  background-color: aqua;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+.rating,
+.commentaar {
+  background-color: #dc4e68;
+  height: 700px;
+  width: 500px;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rating .rat-img {
+  margin: 0 auto;
+}
+.commentaar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
