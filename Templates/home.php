@@ -27,6 +27,7 @@
             <hr>
             <?php
             include_once ('defaults/footer.php');
+            
             ?>
         </div>
             </div> 
