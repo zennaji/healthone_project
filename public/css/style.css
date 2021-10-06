@@ -50,16 +50,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
-  /* flex-wrap: wrap; */
+  
 }
 .con1 {
   height: 80vh;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  width: 50%;
- 
+  width: 800px; 
   float: right;
-  /* background-color: blue; */
+
   
 }
 .hero-container {
@@ -68,16 +65,15 @@ body {
   top: 14%;
 
   
-  /* left: 50%; */
 }
 .hero-txt1 {
   width: 100%;
-  font-size: 50px;
+  font-size: 90px;
 }
 .hero-txt2 {
   width: 100%;
-  font-size: 50px;
-  padding-left: 155px;
+  font-size: 90px;
+  padding-left: 280px;
 }
 .one-txt {
   color: #dc4e68;
@@ -91,7 +87,6 @@ body {
   height: 38px;
   border: 2px solid white;
   display: inline-block;
-  /* float: none; */
   text-align: center;
   width: 120px;
   padding: 0px !important;
@@ -100,7 +95,26 @@ body {
   color: #fff;
   position: relative;
   top: 80px;
-  left: 150px;
+  left: 280px;
+}
+@media only screen and (max-width: 850px) {
+  .hero-txt2{
+    padding-left: 0;
+    font-size: 400%;
+  }
+  .hero-txt1{
+    font-size: 400%;
+  }
+  .con1{
+    width: 100%; 
+    float: none;
+    text-align: center;
+    align-items: center;
+
+  }
+  .wl-btn{
+    left: 0;
+  }
 }
 .equipment-container h1 {
   text-align: center;
