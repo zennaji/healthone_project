@@ -183,7 +183,7 @@ a {
 }
 /* reviews css */
 .reviews-container {
-  background-color: aqua;
+  background-color: rgb(76, 0, 255);
   height: 85vh;
   display: flex;
   justify-content: space-evenly;
@@ -192,7 +192,7 @@ a {
 }
 .rating,
 .commentaar {
-  background-color: #dc4e68;
+  background-color: #9b1919;
   height: 700px;
   width: 500px;
 }
