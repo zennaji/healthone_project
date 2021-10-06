@@ -57,30 +57,24 @@ html{
 }
 .con1 {
   height: 80vh;
-<<<<<<< HEAD
   /* display: flex; */
   /* flex-wrap: wrap; */
   width: 50%;
 
   float: right;
   /* background-color: blue; */
-=======
   width: 800px; 
   float: right;
 
   
->>>>>>> 87bd73df6a1b7bafab1af78105edf6d894d4aa96
 }
 .hero-container {
   position: relative;
   width: 100%;
   top: 14%;
 
-<<<<<<< HEAD
   /* left: 50%; */
-=======
   
->>>>>>> 87bd73df6a1b7bafab1af78105edf6d894d4aa96
 }
 .hero-txt1 {
   width: 100%;
@@ -291,11 +285,8 @@ a {
 }
 .rating,
 .commentaar {
-<<<<<<< HEAD
   background-color: #9b1919;
-=======
   background-color: hsl(0, 0%, 25%);
->>>>>>> 4f18297256a143ed18cb324837cfcc19a19efd71
   height: 700px;
   width: 560px;
   margin-right: 10px;
