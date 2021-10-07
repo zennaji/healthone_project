@@ -8,6 +8,8 @@ body {
 html {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* nav css */
 .cont1 {
   background-color: rgb(0, 0, 0);
 }
@@ -44,7 +46,7 @@ html {
   color: white;
   border-radius: 0%;
 }
-
+/* hero css */
 .jumbotron-hero {
   color: white;
   background-image: url("./../img/hero.jpg");
@@ -79,6 +81,10 @@ html {
 .hero-txt1 {
   width: 100%;
   font-size: 90px;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px white;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px white;
 }
 .hero-txt2 {
   width: 100%;
@@ -215,7 +221,6 @@ a {
   flex-direction: column;
   border: 3px solid rgb(255, 255, 255);
   box-shadow: 0px 0px 20px 5px #dc4e68;
-  
 }
 
 .features-caption {
@@ -228,7 +233,7 @@ a {
 .card-top {
   width: 100%;
 }
-.card-top p{
+.card-top p {
   margin-bottom: -22px;
 }
 .card-top img {
@@ -250,37 +255,35 @@ a {
 }
 
 .membership-cards {
- 
   height: auto;
   padding: 30px 0;
   background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  
-  margin: 0 auto;
 
+  margin: 0 auto;
 }
-.card1{
+.card1 {
   margin-right: 75px;
 }
-.card2{
+.card2 {
   margin-left: 75px;
 }
 
 @media only screen and (max-width: 1090px) {
-  .membership-cards{
+  .membership-cards {
     display: block;
     margin: 0 auto;
-    
   }
-  
-  .card1, .card2, .properties__card{
+
+  .card1,
+  .card2,
+  .properties__card {
     margin: 0 auto;
   }
-  .card1{
+  .card1 {
     margin-bottom: 40px;
   }
-  
 }
 
 .single-features {
@@ -297,13 +300,9 @@ a {
 .features-icon {
   padding-right: 8px;
   padding-top: 2px;
-
-
 }
-.features-icon img{
-  
+.features-icon img {
   width: 22px;
-
 }
 .memb-btn {
   height: 100%;
@@ -352,24 +351,17 @@ a {
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
-
-
 /* =================================== */
-=======
 /* ===============  reviews scroll ==================== */
->>>>>>> 61eccdeff878e598ef3fc2b7f51cc15a447f6416
 .scroll {
   overflow-y: scroll;
 }
 
 .scroll::-webkit-scrollbar {
-
   width: 10px;
   border-radius: 15px;
   background-color: rgb(211, 210, 210);
 }
-
 
 /* Track */
 .scroll::-webkit-scrollbar-track {
@@ -390,22 +382,16 @@ a {
 .scroll::-webkit-scrollbar-track {
   margin-top: 10px;
   margin-bottom: 10px;
- 
 }
-
-
-
-
 
 /* ============= body scroll================ */
 ::-webkit-scrollbar {
-
   width: 14px;
   background-color: rgb(211, 210, 210);
 }
 
-
-/* Track */::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
   box-shadow: inset 0 0 2.5px rgba(0, 0, 0, 0.5);
 }
 
@@ -419,8 +405,6 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #ac1e38;
 }
-
-
 
 /* =================================== */
 
@@ -475,7 +459,7 @@ a {
   margin-top: 30px;
   font-size: 17px;
 }
-.date{
+.date {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.726);
 }
@@ -485,21 +469,21 @@ a {
   border-radius: 50%;
 }
 @media only screen and (max-width: 1090px) {
-  .reviews-container{
+  .reviews-container {
     display: block;
   }
-  .center{
+  .center {
     margin: 0 auto;
   }
-  .rating{
-   margin-bottom: 40px;
+  .rating {
+    margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 650px) {
-  .rating{
+  .rating {
     width: 100%;
   }
-  .commentaar{
+  .commentaar {
     width: 100%;
   }
 }
@@ -531,8 +515,6 @@ a {
 .info-icon {
   padding: 15px;
 }
-
-
 
 /* Social m css */
 .socialm-container {
@@ -571,7 +553,7 @@ a {
 .soc_icon img {
   cursor: pointer;
 }
-#footer_hr{
+#footer_hr {
   color: #fff;
   width: 60%;
   margin: 15px auto;
@@ -581,36 +563,244 @@ a {
   .location,
   .phone,
   .email {
-     width: 30%; 
+    width: 30%;
   }
   .info-icon-img {
     width: 40px;
   }
   .info-txt h1 {
-   
     font-size: 30px;
   }
   .info-txt p {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 620px){
-  .info-container{
+@media only screen and (max-width: 620px) {
+  .info-container {
     display: block;
-
   }
   .location,
   .phone,
   .email {
-     margin: 0 30% auto;
-     
+    margin: 0 30% auto;
   }
 }
 
 /* Footer css */
-footer p{
+footer p {
   color: rgba(255, 255, 255, 0.835);
 }
-footer{
+footer {
   padding: 5px;
+}
+
+/* animate css */
+.div_animate {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  height: auto;
+}
+.animated-txt {
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.child-div{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  
+}
+
+/* cc animation  */
+.sign {
+  
+  width: 50%;
+  height: auto;
+  padding-left: 40px;
+
+  letter-spacing: 2;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #111111, 0 0 1.5rem #111111,
+    -0.2rem 0.1rem 1rem #111111, 0.2rem 0.1rem 1rem #111111,
+    0 -0.5rem 2rem #dc4e68, 0 0.5rem 3rem #dc4e68;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #111111,
+      -0.2rem 0.1rem 1rem #111111, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #dc4e68, 0 0.5rem 3rem #dc4e68;
+  }
+  28%,
+  33% {
+    color: #111111;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #dc4e68;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #111111, 0.2rem 0.1rem 1rem #111111,
+      0 -0.5rem 2rem #dc4e68, 0 0.5rem 3rem #dc4e68;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
