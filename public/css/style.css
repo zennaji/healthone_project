@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
+  width: 100%;
 }
 html {
   background-color: rgba(0, 0, 0, 0.7);
@@ -202,12 +203,12 @@ a {
 }
 
 .membership-container {
-  background-color: rgb(209, 187, 63);
+  background-color: rgb(0, 0, 0);
   height: auto;
 }
 
 .properties__card {
-  width: 30vw;
+  width: 417px;
   height: auto;
   padding: 15px;
   padding-bottom: 20px;
@@ -216,6 +217,7 @@ a {
   flex-direction: column;
   border: 3px solid rgb(255, 255, 255);
   box-shadow: 0px 0px 20px 5px #dc4e68;
+  
 }
 
 .features-caption {
@@ -227,6 +229,9 @@ a {
 
 .card-top {
   width: 100%;
+}
+.card-top p{
+  margin-bottom: -22px;
 }
 .card-top img {
   margin: 0 auto;
@@ -247,25 +252,60 @@ a {
 }
 
 .membership-cards {
+ 
   height: auto;
   padding: 30px 0;
   background-color: rgb(0, 0, 0);
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  
   margin: 0 auto;
+
 }
+.card1{
+  margin-right: 75px;
+}
+.card2{
+  margin-left: 75px;
+}
+
+@media only screen and (max-width: 1090px) {
+  .membership-cards{
+    display: block;
+    margin: 0 auto;
+    
+  }
+  
+  .card1, .card2, .properties__card{
+    margin: 0 auto;
+  }
+  .card1{
+    margin-bottom: 40px;
+  }
+  
+}
+
 .single-features {
   display: flex;
   padding: 1px 10px;
   font-size: 25px;
 }
+.single-features p {
+  font-size: 28px;
+}
 .card-middel {
   margin-top: 40px;
 }
 .features-icon {
-  padding-right: 10px;
-  padding-top: 15px;
+  padding-right: 8px;
+  padding-top: 2px;
+
+
+}
+.features-icon img{
+  
+  width: 22px;
+
 }
 .memb-btn {
   height: 100%;
@@ -279,8 +319,9 @@ a {
 
 /* reviews css */
 .reviews-container {
-  background-color: rgb(76, 0, 255);
-  height: 85vh;
+  padding: 40px;
+  background-color: #922338;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,6 +335,12 @@ a {
   width: 560px;
   margin-right: 10px;
 }
+.rating{
+  background-color: hsla(0, 0%, 0%, 0.335);
+
+
+}
+
 .stars-num{
   font-size: 120px;
   color: rgba(0, 0, 0, 0);
@@ -353,6 +400,10 @@ a {
   margin-top: -80px;
   margin-bottom: -50px;
 }
+.rat-img img {
+  margin-top: 50px;
+}
+
 .rating-reviews {
   padding-left: 50px;
 }
@@ -392,4 +443,37 @@ hr {
   color: #fff;
   border: 3px solid #fff;
   border-radius: 50%;
+}
+ /* Info css */
+ .info-container{
+  color: #fff;
+  padding: 60px;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-txt{
+  display: flex;
+  flex-direction: column;
+}
+.info-txt h1{
+  font-weight: bold;
+  font-size: 40px;
+}
+.info-txt p{
+  font-size: 20px;
+}
+.location, .phone, .email{
+  display: flex;
+} 
+.info-icon{
+  padding: 15px;
+}
+
+/* Social m css */
+.socialm-container{
+  color: #fff;
+  padding: 40px;
+  margin: 0 auto;
 }

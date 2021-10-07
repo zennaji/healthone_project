@@ -18,7 +18,7 @@
                     
                     <br>
                     <span class="period">4 WEKEN</span>
-                    <p class="price">$30/m</p>
+                    <p class="price">€ 30/m</p>
                 </div>
                 <div class="card-middel">
                     <div class="single-features">
@@ -67,9 +67,9 @@
             <div class="properties__card">
 
                 <div class="card-top">
-                <img src="/img/dumbbell2.png" width="105px"> <br>
+                <img src="/img/dumbbell2.png" width="120px"> <br>
                     <span class="period">1 JAAR</span>
-                    <p class="price">$30/m</p>
+                    <p class="price">€ 25/m</p>
                 </div>
                 <div class="card-middel">
                 <div class="single-features">
