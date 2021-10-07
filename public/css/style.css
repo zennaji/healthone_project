@@ -290,7 +290,7 @@ a {
   
 }
 .stars-num{
-  font-size: 140px;
+  font-size: 120px;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px white;
   font-weight: bold;
@@ -354,12 +354,15 @@ a {
   margin-bottom: -50px;
  
 }
+.rat-img img {
+  margin-top: 50px;
+}
 .rating-reviews{
   padding-left: 50px;
 }
 .rating-reviews h2{
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
 }
 .rating-reviews h3{
   padding-left: 30px;

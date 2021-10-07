@@ -1,7 +1,7 @@
 <div class="reviews-container">
     <!-- rating div -->
     <div class="rating">
-        <div class="rat-img"> <img src="/img/rating.png" width="150px"> </div>
+        <div class="rat-img"> <img src="/img/rating.png" width="140px"> </div>
 
 
         <div class="rating-reviews">
