@@ -56,10 +56,9 @@ html {
 }
 .con1 {
   height: 80vh;
-  width: 800px; 
+  width: 800px;
   float: right;
 
-  
   /* display: flex; */
   /* flex-wrap: wrap; */
   width: 50%;
@@ -74,7 +73,6 @@ html {
   width: 100%;
   top: 14%;
 
-  
   /* left: 50%; */
 }
 .hero-txt1 {
@@ -293,31 +291,24 @@ a {
   width: 560px;
   margin-right: 10px;
 }
-.rating{
+.rating {
   background-color: hsla(0, 0%, 0%, 0.335);
-
-
 }
 
-.stars-num{
+.stars-num {
   font-size: 120px;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px white;
   font-weight: bold;
   margin-left: 30px;
 }
-.rat-stars{
+.rat-stars {
   padding-left: 100px;
- 
 }
-.rat-stars button{
+.rat-stars button {
   margin-left: 40px;
   margin-top: 20px;
 }
-
-
-
-
 
 /* =================================== */
 .scroll {
@@ -365,11 +356,11 @@ a {
 .rating-reviews {
   padding-left: 50px;
 }
-.rating-reviews h2{
+.rating-reviews h2 {
   font-weight: bold;
   font-size: 45px;
 }
-.rating-reviews h3{
+.rating-reviews h3 {
   padding-left: 30px;
 }
 .commentaar {
@@ -397,13 +388,13 @@ a {
 .short-text {
   margin-top: 30px;
 }
-hr {
+#hr_reviews {
   color: #fff;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
 }
- /* Info css */
- .info-container{
+/* Info css */
+.info-container {
   color: #fff;
   padding: 60px;
   background-color: #111111;
@@ -411,27 +402,65 @@ hr {
   justify-content: space-around;
   align-items: center;
 }
-.info-txt{
+.info-txt {
   display: flex;
   flex-direction: column;
 }
-.info-txt h1{
+.info-txt h1 {
   font-weight: bold;
   font-size: 40px;
 }
-.info-txt p{
+.info-txt p {
   font-size: 20px;
 }
-.location, .phone, .email{
+.location,
+.phone,
+.email {
   display: flex;
-} 
-.info-icon{
+}
+.info-icon {
   padding: 15px;
 }
 
 /* Social m css */
-.socialm-container{
+.socialm-container {
   color: #fff;
-  padding: 40px;
+  height: auto;
+  padding: 70px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.soc_nav ul {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+}
+.soc_nav ul li {
+  padding: 0 25px;
+}
+.soc_titel {
+  font-size: 50px;
+  padding: 20px;
+}
+.soc_titel span {
+  color: #dc4e68;
+}
+.soc_icon {
+  padding: 20px;
+  height: 200px;
+  height: auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.soc_icon img {
+  cursor: pointer;
+}
+#footer_he{
+  color: #fff;
+  width: 60%;
+  margin: 15px auto;
 }
