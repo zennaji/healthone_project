@@ -56,12 +56,10 @@ html {
 }
 .con1 {
   height: 80vh;
-<<<<<<< HEAD
   width: 800px; 
   float: right;
 
   
-=======
   /* display: flex; */
   /* flex-wrap: wrap; */
   width: 50%;
@@ -70,18 +68,14 @@ html {
   /* background-color: blue; */
   width: 800px;
   float: right;
->>>>>>> 2adbd09ec9631c556229f2a239888b54e4f99b11
 }
 .hero-container {
   position: relative;
   width: 100%;
   top: 14%;
 
-<<<<<<< HEAD
   
-=======
   /* left: 50%; */
->>>>>>> 2adbd09ec9631c556229f2a239888b54e4f99b11
 }
 .hero-txt1 {
   width: 100%;
@@ -294,16 +288,8 @@ a {
 }
 .rating,
 .commentaar {
-<<<<<<< HEAD
-
-  background-color: #9b1919;
-
-  background-color: hsl(0, 0%, 25%);
-
-=======
   background-color: #9b1919;
   background-color: hsl(0, 0%, 25%);
->>>>>>> 2adbd09ec9631c556229f2a239888b54e4f99b11
   height: 700px;
   width: 560px;
   margin-right: 10px;
@@ -367,14 +353,7 @@ a {
   margin-top: -80px;
   margin-bottom: -50px;
 }
-<<<<<<< HEAD
-.rat-img img {
-  margin-top: 50px;
-}
-.rating-reviews{
-=======
 .rating-reviews {
->>>>>>> 2adbd09ec9631c556229f2a239888b54e4f99b11
   padding-left: 50px;
 }
 .rating-reviews h2{
