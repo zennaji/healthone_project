@@ -402,4 +402,29 @@ hr {
   border: 3px solid #fff;
   border-radius: 50%;
 }
-
+ /* Info css */
+ .info-container{
+  color: #fff;
+  padding: 60px;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-txt{
+  display: flex;
+  flex-direction: column;
+}
+.info-txt h1{
+  font-weight: bold;
+  font-size: 40px;
+}
+.info-txt p{
+  font-size: 20px;
+}
+.location, .phone, .email{
+  display: flex;
+} 
+.info-icon{
+  padding: 15px;
+}
