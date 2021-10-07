@@ -17,4 +17,4 @@
         <img src="/img/whatsapp.png " width="30px">
     </div>
 </div>
-<hr id="footer_he" >
+<hr id="footer_hr">

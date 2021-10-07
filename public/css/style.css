@@ -459,8 +459,15 @@ a {
 .soc_icon img {
   cursor: pointer;
 }
-#footer_he{
+#footer_hr{
   color: #fff;
   width: 60%;
   margin: 15px auto;
+}
+/* Footer css */
+footer p{
+  color: rgba(255, 255, 255, 0.835);
+}
+footer{
+  padding: 5px;
 }
