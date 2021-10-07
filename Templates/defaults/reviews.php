@@ -7,9 +7,9 @@
         <div class="rating-reviews">
 
             <h2>HEALTHONE <br> REVIEWS</h2>
-            <h3>Lees hier wat onze leden over ons <br> zeggen!</h3>
+            <h3 >Lees hier wat onze leden over ons <br> zeggen!</h3>
             <div class="rat-number">
-                <p>4.5</p>
+                <p class="stars-num" >4.5</p>
             </div>
             <div class="rat-stars">
                 <div class="stars">
