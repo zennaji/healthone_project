@@ -53,7 +53,7 @@
                 <p class="date">03 September 2021</p>
 
             </div>
-            <hr>
+            <hr id="hr_reviews">
             <div class="review-2">
                 <div class="com-img">
                     <img class="com-r-img" src="/img/client.png" width="70px" alt="">

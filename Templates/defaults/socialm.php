@@ -4,10 +4,10 @@
     </div>
     <div class="soc_nav">
         <ul>
-            <li>HOME</li>
-            <li>SPORTAPPARAAT</li>
-            <li>REGISTREREN</li>
-            <li>CONTACT</li>
+            <li><a class="nav-link " href="/home">HOME</a></li>
+            <li><a class="nav-link" href="/categories">SPORTAPPARAAT</a></li>
+            <li><a class="nav-link"  href="#">REGISTREREN</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
         </ul>
     </div>
     <div class="soc_icon">
@@ -17,4 +17,4 @@
         <img src="/img/whatsapp.png " width="30px">
     </div>
 </div>
-<hr>
+<hr id="footer_hr">
