@@ -1,6 +1,6 @@
 <div class="reviews-container">
     <!-- rating div -->
-    <div class="rating">
+    <div class="rating center">
         <div class="rat-img"> <img src="/img/rating.png" width="140px"> </div>
 
 
@@ -30,9 +30,9 @@
 
     </div>
     <!-- commentaa div -->
-    <div class="commentaar scroll">
+    <div class="commentaar scroll center">
 
-        <div class="com-text">
+        <div class="com-text ">
             <div class="review-1">
                 <div class="com-img">
                     <img class="com-r-img" src="/img/client.png" width="70px" alt="">

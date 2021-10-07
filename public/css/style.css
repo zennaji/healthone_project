@@ -352,6 +352,8 @@ a {
   margin-top: 20px;
 }
 
+
+
 /* =================================== */
 .scroll {
   overflow-y: scroll;
@@ -435,6 +437,25 @@ a {
   border: 2px solid #fff;
   border-radius: 50%;
 }
+@media only screen and (max-width: 1090px) {
+  .reviews-container{
+    display: block;
+  }
+  .center{
+    margin: 0 auto;
+  }
+  .rating{
+   margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .rating{
+    width: 100%;
+  }
+  .commentaar{
+    width: 100%;
+  }
+}
 /* Info css */
 .info-container {
   color: #fff;
@@ -463,6 +484,8 @@ a {
 .info-icon {
   padding: 15px;
 }
+
+
 
 /* Social m css */
 .socialm-container {
@@ -506,6 +529,37 @@ a {
   width: 60%;
   margin: 15px auto;
 }
+
+@media only screen and (max-width: 920px) {
+  .location,
+  .phone,
+  .email {
+     width: 30%; 
+  }
+  .info-icon-img {
+    width: 40px;
+  }
+  .info-txt h1 {
+   
+    font-size: 30px;
+  }
+  .info-txt p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 620px){
+  .info-container{
+    display: block;
+
+  }
+  .location,
+  .phone,
+  .email {
+     margin: 0 30% auto;
+     
+  }
+}
+
 /* Footer css */
 footer p{
   color: rgba(255, 255, 255, 0.835);
