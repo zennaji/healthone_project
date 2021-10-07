@@ -1,5 +1,7 @@
 <div class="socialm-container">
-    <h1 class="soc_titel"></h1>
+    <div class="soc-title">
+        <h1 class="soc_titel">HEALTH<span>ONE</span></h1>
+    </div>
     <div class="soc_nav">
         <ul>
             <li>HOME</li>
@@ -9,9 +11,10 @@
         </ul>
     </div>
     <div class="soc_icon">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="/img/facebook.png " width="18px">
+        <img src="/img/instagram.png " width="30px">
+        <img src="/img/twitter.png " width="30px">
+        <img src="/img/whatsapp.png " width="30px">
     </div>
 </div>
 <hr>

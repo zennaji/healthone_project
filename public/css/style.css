@@ -207,7 +207,7 @@ a {
 }
 
 .properties__card {
-  width: 30vw;
+  width: 25vw;
   height: auto;
   padding: 15px;
   padding-bottom: 20px;
@@ -427,4 +427,11 @@ hr {
 } 
 .info-icon{
   padding: 15px;
+}
+
+/* Social m css */
+.socialm-container{
+  color: #fff;
+  padding: 40px;
+  margin: 0 auto;
 }
