@@ -284,11 +284,8 @@ a {
   .card1 {
     margin-bottom: 40px;
   }
-<<<<<<< HEAD
   
   
-=======
->>>>>>> d7741e9535a34644ec7dafd3561a7daf9fdce3fd
 }
 
 .single-features {
@@ -322,7 +319,7 @@ a {
 /* reviews css */
 .reviews-container {
   padding: 40px;
-  background-color: #922338;
+  background-color: #dc4e68;
   height: auto;
   display: flex;
   justify-content: center;
@@ -331,7 +328,6 @@ a {
 }
 .rating,
 .commentaar {
-  background-color: #9b1919;
   background-color: hsl(0, 0%, 25%);
   height: 700px;
   width: 560px;
@@ -356,11 +352,8 @@ a {
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> d7741e9535a34644ec7dafd3561a7daf9fdce3fd
 /* =================================== */
 /* ===============  reviews scroll ==================== */
 .scroll {
@@ -650,7 +643,6 @@ footer {
   padding: 5px;
 }
 
-<<<<<<< HEAD
 
 
 @media only screen and (max-width: 900px){
@@ -664,7 +656,6 @@ footer {
     
   }
 }
-=======
 /* animate css */
 .div_animate {
   display: flex;
@@ -875,4 +866,3 @@ footer {
     opacity: 1;
   }
 }
->>>>>>> d7741e9535a34644ec7dafd3561a7daf9fdce3fd
