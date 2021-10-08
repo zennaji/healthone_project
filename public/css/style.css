@@ -596,11 +596,14 @@ a {
     
   }
   .properties__card {
-    width: 362px;
+    width: 347px;
   }
   .membership-container h1 span {
-    font-size: 46px;
+    font-size: 40px;
   }
+  .membership-container h1 {
+  font-size: 40px;
+}
   .rating-reviews h2 {
     margin-left: -42px;
 }
