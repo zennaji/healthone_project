@@ -53,7 +53,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 90vh; */
-  height: 840px;
+  height: 600px;
 }
 .con1 {
   height: 80vh;
@@ -64,10 +64,10 @@ html {
   /* flex-wrap: wrap; */
   width: 50%;
 
-  float: right;
+ 
   /* background-color: blue; */
   width: 800px;
-  float: right;
+
 }
 .hero-container {
   position: relative;
@@ -91,19 +91,19 @@ html {
   width: 40%;
 }
 .wl-btn {
-  background: transparent;
+  background: #dc4e68;
   height: 38px;
   border: 2px solid white;
   display: inline-block;
   text-align: center;
   width: 120px;
   padding: 0px !important;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   top: 50px;
-  left: 280px;
+  left: 600px;
 }
 @media only screen and (max-width: 850px) {
   .hero-txt2 {
@@ -134,7 +134,7 @@ a {
 }
 .ju-btn {
   background: transparent;
-  height: 38px;
+  height: 50px;
   border: 2px solid white;
   text-align: center;
   width: 130px;
@@ -281,6 +281,7 @@ a {
     margin-bottom: 40px;
   }
   
+  
 }
 
 .single-features {
@@ -352,13 +353,10 @@ a {
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
 
 
 /* =================================== */
-=======
 /* ===============  reviews scroll ==================== */
->>>>>>> 61eccdeff878e598ef3fc2b7f51cc15a447f6416
 .scroll {
   overflow-y: scroll;
 }
@@ -548,6 +546,9 @@ a {
 .soc_nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items:stretch;
   padding: 10px;
 }
 .soc_nav ul li {
@@ -605,6 +606,49 @@ a {
      margin: 0 30% auto;
      
   }
+  
+  .membership-text {
+    margin-left: 0px;
+    
+  }
+  .properties__card {
+    width: 362px;
+  }
+  .membership-container h1 span {
+    font-size: 46px;
+  }
+  .rating-reviews h2 {
+    margin-left: -42px;
+}
+.rat-stars {
+  padding-left: 0px;
+}
+.info-container .location{
+  color: #fff;
+  background-color: #111111;
+  display: grid;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+.info-container .phone{
+  color: #fff;
+  background-color: #111111;
+  display: grid;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+.info-container .email{
+  color: #fff;
+  background-color: #111111;
+  display: grid;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+
+
 }
 
 /* Footer css */
@@ -613,4 +657,18 @@ footer p{
 }
 footer{
   padding: 5px;
+}
+
+
+
+@media only screen and (max-width: 900px){
+  .soc_nav ul {
+    list-style: none;
+    display: grid;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items:flex-end;
+    padding: 10px;
+    
+  }
 }
