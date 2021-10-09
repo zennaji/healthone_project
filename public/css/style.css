@@ -68,10 +68,8 @@ html {
   /* flex-wrap: wrap; */
   width: 50%;
 
- 
   /* background-color: blue; */
   width: 800px;
-
 }
 .hero-container {
   position: relative;
@@ -286,10 +284,7 @@ a {
   .card1 {
     margin-bottom: 40px;
   }
-  
-  
 }
-
 
 .single-features {
   display: flex;
@@ -353,9 +348,7 @@ a {
 .rat-stars button {
   margin-left: 40px;
   margin-top: 20px;
-} 
-
-
+}
 
 /* =================================== */
 /* ===============  reviews scroll ==================== */
@@ -538,7 +531,7 @@ a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  align-items:stretch;
+  align-items: stretch;
   padding: 10px;
 }
 .soc_nav ul li {
@@ -592,58 +585,67 @@ a {
   .location,
   .phone,
   .email {
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  .info-icon{
+  .info-icon {
     width: 100%;
-  }
-  
-  .info-icon-img{
-    text-align: center;
-  }
-  
-  .membership-text {
-    margin-left: 0px;
+    display: flex;
     
   }
-    .properties__card {
+
+
+  .info-icon-img {
+     /* text-align: center; */
+    margin: 0 auto; 
+    justify-content: center;
+
+  }
+  .info-txt{
+    text-align: center;
+  }
+
+  .membership-text {
+    margin-left: 0px;
+  }
+  .properties__card {
     width: 362px;
   }
+  .properties__card {
+    width: 347px;
+  }
   .membership-container h1 span {
-    font-size: 46px;
+    font-size: 40px;
+  }
+  .membership-container h1 {
+    font-size: 40px;
   }
   .rating-reviews h2 {
     margin-left: -42px;
-}
-.rat-stars {
-  padding-left: 0px;
-}
-.info-container .location{
-  color: #fff;
-  background-color: #111111;
-  display: grid;
-  justify-content: space-around;
-  align-items: flex-start;
-  
-}
-.info-container .phone{
-  color: #fff;
-  background-color: #111111;
-  display: grid;
-  justify-content: space-around;
-  align-items: flex-start;
-  
-}
-.info-container .email{
-  color: #fff;
-  background-color: #111111;
-  display: grid;
-  justify-content: space-around;
-  align-items: flex-start;
-  
-}
-
-
+  }
+  .rat-stars {
+    padding-left: 0px;
+  }
+  .info-container .location {
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .info-container .phone {
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .info-container .email {
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
 /* Footer css */
@@ -654,17 +656,14 @@ footer {
   padding: 5px;
 }
 
-
-
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
   .soc_nav ul {
     list-style: none;
     display: grid;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    align-items:flex-end;
+    align-items: flex-end;
     padding: 10px;
-    
   }
 }
 /* animate css */
@@ -681,40 +680,37 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-.child-div{
+.child-div {
   display: flex;
   flex-direction: column;
   height: auto;
-  
 }
 
 @media only screen and (max-width: 400px) {
-  
-  .card1, .card2, .properties__card{
+  .card1,
+  .card2,
+  .properties__card {
     width: 100%;
   }
-  .soc_icon{
+  .soc_icon {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  .membership-text h1{
+  .membership-text h1 {
     font-size: 35px;
   }
-  .membership-text h1 span{
+  .membership-text h1 span {
     font-size: 35px;
   }
-  .membership-text p{
+  .membership-text p {
     font-size: 20px;
   }
-  
 }
 
 /* cc animation  */
 .sign {
-  
   width: 50%;
   height: auto;
   padding-left: 40px;
