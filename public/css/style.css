@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   width: 100%;
+  background-color: black;
 }
 html {
   background-color: rgba(0, 0, 0, 0.7);
@@ -12,6 +13,7 @@ html {
 /* nav css */
 .cont1 {
   background-color: rgb(0, 0, 0);
+  width: 100%;
 }
 .nav-link {
   color: white;
@@ -288,6 +290,7 @@ a {
   
 }
 
+
 .single-features {
   display: flex;
   padding: 1px 10px;
@@ -350,7 +353,7 @@ a {
 .rat-stars button {
   margin-left: 40px;
   margin-top: 20px;
-}
+} 
 
 
 
@@ -540,6 +543,7 @@ a {
 }
 .soc_nav ul li {
   padding: 0 25px;
+  text-align: center;
 }
 .soc_titel {
   font-size: 50px;
@@ -588,14 +592,21 @@ a {
   .location,
   .phone,
   .email {
-    margin: 0 30% auto;
+    margin: 0 auto; 
+  }
+  .info-icon{
+    width: 100%;
+  }
+  
+  .info-icon-img{
+    text-align: center;
   }
   
   .membership-text {
     margin-left: 0px;
     
   }
-  .properties__card {
+    .properties__card {
     width: 362px;
   }
   .membership-container h1 span {
@@ -676,6 +687,28 @@ footer {
   display: flex;
   flex-direction: column;
   height: auto;
+  
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .card1, .card2, .properties__card{
+    width: 100%;
+  }
+  .soc_icon{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .membership-text h1{
+    font-size: 35px;
+  }
+  .membership-text h1 span{
+    font-size: 35px;
+  }
+  .membership-text p{
+    font-size: 20px;
+  }
   
 }
 
