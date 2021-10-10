@@ -109,7 +109,9 @@ html {
   color: #ffffff;
   position: relative;
   top: 50px;
-  left: 600px;
+  left: 300px; 
+
+
 }
 @media only screen and (max-width: 850px) {
   .hero-txt2 {
@@ -126,7 +128,7 @@ html {
     align-items: center;
   }
   .wl-btn {
-    left: 0;
+     left: 0; 
   }
 }
 .equipment-container h1 {
@@ -343,11 +345,17 @@ a {
   margin-left: 30px;
 }
 .rat-stars {
-  padding-left: 100px;
+
+   
 }
-.rat-stars button {
-  margin-left: 40px;
-  margin-top: 20px;
+.rat-stars .stars , .rat-stars h4{
+  margin-left: 80px;
+}
+.rating-reviews-btn{
+  /* background-color: chartreuse; */
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
 }
 
 /* =================================== */
@@ -706,6 +714,31 @@ footer {
   }
   .membership-text p {
     font-size: 20px;
+  }
+  
+}
+@media only screen and (max-width: 490px){
+  .reviews-container{
+    padding: 10px;
+  }
+  .rating-reviews h2{
+    font-size: 35px;
+  }
+  .rating-reviews h3{
+    font-size: 20px;
+  }
+  .stars-num{
+    font-size: 120px;
+  }
+  .review-text{
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  .container-fluid{
+    padding: 10px;
+  }
+  .container-fluid .navbar-brand{
+    width: 60%;
   }
 }
 
