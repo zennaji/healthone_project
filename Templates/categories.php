@@ -79,7 +79,10 @@ include_once('defaults/head.php');
 
         <hr>
         <?php
+
+        
         include_once ('defaults/info.php');
+        include_once('defaults/socialm.php');
         include_once('defaults/footer.php');
 
         
