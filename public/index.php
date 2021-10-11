@@ -33,8 +33,11 @@ switch ($params[1]) {
             // TODO Toon de categorieen
             $categories = getCategories();
             include_once "../Templates/categories.php";
+            
         }
         break;
+
+        
     default:
         $titleSuffix = ' | Home';
         include_once "../Templates/home.php";
