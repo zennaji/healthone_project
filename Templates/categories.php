@@ -16,12 +16,6 @@ include_once('defaults/head.php');
 
         ?>
     
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                <li class="breadcrumb-item"><a href="/categories">Categories</a></li>
-            </ol>
-        </nav>
 
 
         <div class="row gy-3 ">
@@ -85,6 +79,7 @@ include_once('defaults/head.php');
 
         <hr>
         <?php
+        include_once ('defaults/info.php');
         include_once('defaults/footer.php');
 
         

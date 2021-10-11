@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   width: 100%;
+  background-color: black;
 }
 html {
   background-color: rgba(0, 0, 0, 0.7);
@@ -12,6 +13,7 @@ html {
 /* nav css */
 .cont1 {
   background-color: rgb(0, 0, 0);
+  width: 100%;
 }
 .nav-link {
   color: white;
@@ -66,10 +68,8 @@ html {
   /* flex-wrap: wrap; */
   width: 50%;
 
- 
   /* background-color: blue; */
   width: 800px;
-
 }
 .hero-container {
   position: relative;
@@ -109,7 +109,9 @@ html {
   color: #ffffff;
   position: relative;
   top: 50px;
-  left: 600px;
+  left: 300px; 
+
+
 }
 @media only screen and (max-width: 850px) {
   .hero-txt2 {
@@ -126,7 +128,7 @@ html {
     align-items: center;
   }
   .wl-btn {
-    left: 0;
+     left: 0; 
   }
 }
 .equipment-container h1 {
@@ -284,8 +286,6 @@ a {
   .card1 {
     margin-bottom: 40px;
   }
-  
-  
 }
 
 .single-features {
@@ -345,14 +345,18 @@ a {
   margin-left: 30px;
 }
 .rat-stars {
-  padding-left: 100px;
-}
-.rat-stars button {
-  margin-left: 40px;
-  margin-top: 20px;
-}
 
-
+   
+}
+.rat-stars .stars , .rat-stars h4{
+  margin-left: 80px;
+}
+.rating-reviews-btn{
+  /* background-color: chartreuse; */
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+}
 
 /* =================================== */
 /* ===============  reviews scroll ==================== */
@@ -535,11 +539,12 @@ a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  align-items:stretch;
+  align-items: stretch;
   padding: 10px;
 }
 .soc_nav ul li {
   padding: 0 25px;
+  text-align: center;
 }
 .soc_titel {
   font-size: 50px;
@@ -588,51 +593,67 @@ a {
   .location,
   .phone,
   .email {
-    margin: 0 30% auto;
+    margin: 0 auto;
   }
-  
+  .info-icon {
+    width: 100%;
+    display: flex;
+    
+  }
+
+
+  .info-icon-img {
+     /* text-align: center; */
+    margin: 0 auto; 
+    justify-content: center;
+
+  }
+  .info-txt{
+    text-align: center;
+  }
+
   .membership-text {
     margin-left: 0px;
-    
   }
   .properties__card {
     width: 362px;
   }
+  .properties__card {
+    width: 347px;
+  }
   .membership-container h1 span {
-    font-size: 46px;
+    font-size: 40px;
+  }
+  .membership-container h1 {
+    font-size: 40px;
   }
   .rating-reviews h2 {
     margin-left: -42px;
-}
-.rat-stars {
-  padding-left: 0px;
-}
-.info-container .location{
-  color: #fff;
-  background-color: #111111;
-  display: grid;
-  justify-content: space-around;
-  align-items: flex-start;
-  
-}
-.info-container .phone{
-  color: #fff;
-  background-color: #111111;
-  display: grid;
-  justify-content: space-around;
-  align-items: flex-start;
-  
-}
-.info-container .email{
-  color: #fff;
-  background-color: #111111;
-  display: grid;
-  justify-content: space-around;
-  align-items: flex-start;
-  
-}
-
-
+  }
+  .rat-stars {
+    padding-left: 0px;
+  }
+  .info-container .location {
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .info-container .phone {
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .info-container .email {
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
 /* Footer css */
@@ -643,17 +664,14 @@ footer {
   padding: 5px;
 }
 
-
-
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
   .soc_nav ul {
     list-style: none;
     display: grid;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    align-items:flex-end;
+    align-items: flex-end;
     padding: 10px;
-    
   }
 }
 /* animate css */
@@ -670,18 +688,62 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-.child-div{
+.child-div {
   display: flex;
   flex-direction: column;
   height: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .card1,
+  .card2,
+  .properties__card {
+    width: 100%;
+  }
+  .soc_icon {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .membership-text h1 {
+    font-size: 35px;
+  }
+  .membership-text h1 span {
+    font-size: 35px;
+  }
+  .membership-text p {
+    font-size: 20px;
+  }
   
+}
+@media only screen and (max-width: 490px){
+  .reviews-container{
+    padding: 10px;
+  }
+  .rating-reviews h2{
+    font-size: 35px;
+  }
+  .rating-reviews h3{
+    font-size: 20px;
+  }
+  .stars-num{
+    font-size: 120px;
+  }
+  .review-text{
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  .container-fluid{
+    padding: 10px;
+  }
+  .container-fluid .navbar-brand{
+    width: 60%;
+  }
 }
 
 /* cc animation  */
 .sign {
-  
   width: 50%;
   height: auto;
   padding-left: 40px;

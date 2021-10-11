@@ -13,5 +13,6 @@ class Product
     {
         settype($this->id, 'integer');
         settype($this->category_id, 'integer');
+       
     }
 }

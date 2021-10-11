@@ -20,13 +20,16 @@
                     <img src="/img/star.png" width="20px">
                 </div>
                 <h4>Rating van alle reviews</h4>
-                <button class=" ju-btn reviews">ZIE ALLE REVIEWS </button>
+
+                
             </div>
 
 
         </div>
-
-
+        
+        <div class="rating-reviews-btn">
+            <button class=" ju-btn reviews">ZIE ALLE REVIEWS </button>
+        </div>
 
     </div>
     <!-- commentaa div -->
