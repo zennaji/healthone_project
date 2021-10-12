@@ -1,7 +1,8 @@
 <?php
 require '../Modules/Categories.php';
 require '../Modules/Products.php';
-// require '../Modules/Database.php';
+require '../Modules/Reviews.php';
+require '../Modules/Database.php';
 
 $request = $_SERVER['REQUEST_URI'];
 $params = explode("/", $request);
@@ -15,6 +16,7 @@ switch ($params[1]) {
         if (isset($_GET['category_id'])) {
             $categoryId = $_GET['category_id'];
             $products = getProducts($categoryId);
+            var_dump($products);
             $name = getCategoryName($categoryId);
 
             if (isset($_GET['product_id'])) {
@@ -38,6 +40,10 @@ switch ($params[1]) {
         break;
 
         
+    case 'contact':
+        $titleSuffix = ' | Contant';
+        include_once "../Templates/contact.php";
+        break;
     default:
         $titleSuffix = ' | Home';
         include_once "../Templates/home.php";
