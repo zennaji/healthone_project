@@ -16,7 +16,7 @@ switch ($params[1]) {
         if (isset($_GET['category_id'])) {
             $categoryId = $_GET['category_id'];
             $products = getProducts($categoryId);
-            var_dump($products);
+            // var_dump($products);
             $name = getCategoryName($categoryId);
 
             if (isset($_GET['product_id'])) {
