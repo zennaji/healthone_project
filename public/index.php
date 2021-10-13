@@ -29,6 +29,12 @@ switch ($params[1]) {
                     $reviews=getReviews($productId);
                 }
                 // TODO Zorg dat je hier de product pagina laat zien
+<<<<<<< HEAD
+                include_once "../Templates/product.php";
+            } else {
+                // TODO Zorg dat je hier alle producten laat zien van een categorie
+                include_once "../Templates/products.php";
+=======
 
                 
 
@@ -44,6 +50,7 @@ switch ($params[1]) {
                
                 
 
+>>>>>>> 09fb775c7eaf1d9efa6d41c0f60733111cbba1d2
             }
         } else {
             // TODO Toon de categorieen
