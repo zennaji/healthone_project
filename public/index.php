@@ -15,9 +15,7 @@ switch ($params[1]) {
         
         if (isset($_GET['category_id'])) {
             $categoryId = $_GET['category_id'];
-
-        
-
+            $products = getProducts($categoryId);
             $name = getCategoryName($categoryId);
 
             if (isset($_GET['product_id'])) {
@@ -29,31 +27,14 @@ switch ($params[1]) {
                     $reviews=getReviews($productId);
                 }
                 // TODO Zorg dat je hier de product pagina laat zien
-<<<<<<< HEAD
+
                 include_once "../Templates/product.php";
+
+                
             } else {
                 // TODO Zorg dat je hier alle producten laat zien van een categorie
                 include_once "../Templates/products.php";
-=======
-
-                //$product = getProduct($productId);
-
-                //var_dump($product);
-
-
-            } else {
-                // TODO Zorg dat je hier alle producten laat zien van een categorie
-
-                $products = getProducts($categoryId);
-
-                var_dump($products);
-                
-                
-               
-                
-
->>>>>>> 09fb775c7eaf1d9efa6d41c0f60733111cbba1d2
-            }
+            } 
         } else {
             // TODO Toon de categorieen
             $categories = getCategories();
