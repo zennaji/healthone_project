@@ -15,7 +15,7 @@ switch ($params[1]) {
         
         if (isset($_GET['category_id'])) {
             $categoryId = $_GET['category_id'];
-
+            $products = getProducts($categoryId);
         
 
             $name = getCategoryName($categoryId);
@@ -30,17 +30,15 @@ switch ($params[1]) {
                 }
                 // TODO Zorg dat je hier de product pagina laat zien
 
-                //$product = getProduct($productId);
-
-                //var_dump($product);
+                
 
 
             } else {
                 // TODO Zorg dat je hier alle producten laat zien van een categorie
 
-                $products = getProducts($categoryId);
+                
 
-                var_dump($products);
+                
                 
                 
                
@@ -49,6 +47,7 @@ switch ($params[1]) {
             }
         } else {
             // TODO Toon de categorieen
+
             $categories = getCategories();
 
             include_once "../Templates/categories.php";
