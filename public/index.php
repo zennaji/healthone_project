@@ -28,6 +28,8 @@ switch ($params[1]) {
                     $reviews=getReviews($productId);
                 }
                 // TODO Zorg dat je hier de product pagina laat zien
+                
+
             } else {
                 // TODO Zorg dat je hier alle producten laat zien van een categorie
             }
