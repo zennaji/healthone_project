@@ -34,6 +34,7 @@ switch ($params[1]) {
 
                 include_once "../Templates/product.php";
 
+                include_once "../Templates/product.php";
 
                 
             } else {

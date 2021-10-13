@@ -12,20 +12,23 @@ include_once('defaults/head.php');
         include_once('defaults/header.php');
         include_once('defaults/menu.php');
 
-
+        echo "<div class='card-con' >";
         foreach ($products as $data) {
+            echo "<a href='product.php?id=" . $data->id . "'>"; 
+            
             echo "<div class='card' >";
             echo "<img class='card-img-top' src=" . $data->picture    . ">";
             echo "<div class='card-body P-card-body' >";
             echo "<h3>" . $data->name . "</h3>";
-            echo "<p>" . $data->description . "</p>";
-
-
+            
 
             echo "</div>";
 
             echo "</div>";
+
+            "</a> ";
         }
+        echo"</div>";
 
         ?>
 
