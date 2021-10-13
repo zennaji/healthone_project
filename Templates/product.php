@@ -25,17 +25,7 @@ include_once('defaults/head.php');
 
                 </div>
 
-                <?php
-                $db = include('../Modules/Database.php');
-
-                // $query = $db->prepare("SELECT * FROM categorie");
-                // $query->execuute();
-                // $result = $query->fetchAll(PDO::FETCH_ASSOC);
-
-
-                ?>
-
-            <!-- hier moet er nog product section gemaakt worden -->
+               
         <?php
 
         
