@@ -20,8 +20,12 @@ switch ($params[1]) {
 
             if (isset($_GET['product_id'])) {
                 $productId = $_GET['product_id'];
+                
                 $product = getProduct($productId);
+
                 $titleSuffix = ' | ' . $product->name;
+
+
                 if(isset($_POST['name']) && isset($_POST['review'])) {
                     saveReview($_POST['name'],$_POST['review']);
                     $reviews=getReviews($productId);
@@ -32,7 +36,7 @@ switch ($params[1]) {
 
                 include_once "../Templates/product.php";
 
-                include_once "../Templates/product.php";
+               // include_once "../Templates/product.php";
 
                 
             } else {
