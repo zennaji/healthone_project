@@ -928,3 +928,16 @@ footer {
     opacity: 1;
   }
 }
+.card-con{
+  display: flex;
+  
+  justify-content: center;
+}
+.card{
+
+  margin: 5px;
+  width: 300px;
+}
+.card h3{
+  text-align: center;
+}

@@ -39,7 +39,9 @@ switch ($params[1]) {
 
                 //var_dump($product);
 
+                
 
+                
             } 
         } else {
             // TODO Toon de categorieen
