@@ -19,11 +19,15 @@ switch ($params[1]) {
             $name = getCategoryName($categoryId);
 
             if (isset($_GET['product_id'])) {
-                $productId = $_GET['product_id'];
-                
+                $productId = $_GET['product_id'];               
                 $product = getProduct($productId);
 
-                $titleSuffix = ' | ' . $product->name;
+            include_once "../Templates/product.php";
+
+        // echo "<h3>" . $product['name'] . "</h3>";
+      
+      
+                 $titleSuffix = ' | ' . $product['name'];
 
 
                 if(isset($_POST['name']) && isset($_POST['review'])) {
@@ -34,7 +38,6 @@ switch ($params[1]) {
 
 
 
-                include_once "../Templates/product.php";
 
                // include_once "../Templates/product.php";
 
