@@ -9,7 +9,7 @@
         <h1 class=" hero-txt2">HEALTH 
             <span class="one-txt" >ONE</span> 
         </h1>
-        <button class="wl-btn" >WORD LID!</button>
+        <a href="#membership"><button class="wl-btn" >WORD LID!</button></a> 
       </div>
       
   </div>

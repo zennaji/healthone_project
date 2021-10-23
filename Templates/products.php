@@ -37,7 +37,6 @@ include_once('defaults/head.php');
         <?php
 
 
-        include_once('defaults/info.php');
         include_once('defaults/socialm.php');
         include_once('defaults/footer.php');
 

@@ -11,13 +11,12 @@ include_once('defaults/head.php');
         <?php
         include_once('defaults/header.php');
         include_once('defaults/menu.php');
-        include_once('defaults/pictures.php');
 
 
         ?>
     
 
-
+        <h1 class='title_contact' id='contact'>categories</h1>
         <div class="row cards">
             <div class="col-3 card">
                 <div class="card-body text-center">
@@ -66,7 +65,6 @@ include_once('defaults/head.php');
         <?php
 
         
-        include_once ('defaults/info.php');
         include_once('defaults/socialm.php');
         include_once('defaults/footer.php');
 

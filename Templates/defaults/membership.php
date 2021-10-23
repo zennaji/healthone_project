@@ -1,14 +1,15 @@
-<div class="membership-container">
+<div class="membership-container" >
     <div class="membership-text">
         <h1> HEALTHONE <br> <span>LIDMAATSCHAP</span> </h1>
         <br>
-        <p>HealthOne geeft jou de mogelijkgeid om fit te worden zoals jij zelf wil. <br>
+        <p >HealthOne geeft jou de mogelijkgeid om fit te worden zoals jij zelf wil. <br>
             Dat doen we onder andere door het aanbieden van verschillende lidmatschaappen. <br>
             Kies het lidmaatschap dat het beste aansluit bij jouw wensen en doelen</p>
-        <br>
+        <br >
     </div>
     <!-- CARDS -->
-    <div class=" membership-cards">
+    
+    <div class=" membership-cards" id="membership" >
         <div class="card1">
             <div class="properties__card">
                 <div class="card-top">
@@ -113,6 +114,7 @@
         </div>
 
     </div>
+    
 
 
 
