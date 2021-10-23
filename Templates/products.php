@@ -14,7 +14,7 @@ include_once('defaults/head.php');
 
         echo "<div class='card-con' >";
         foreach ($products as $data) {
-            //echo "<a href='product.php?id=" . $data->id . "'>"; 
+            
 
             echo "<a href='" . $categoryId . "/product/" . $data->id . "'>";
             

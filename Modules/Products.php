@@ -1,10 +1,12 @@
 <?php
 include "Database.php";
 // TODO Zorg dat de methodes goed ingevuld worden met de juiste queries.
+
+
 function getProducts(int $categoryId){
 
+    
     global $pdo;
-
     $query = $pdo->prepare("SELECT * FROM product WHERE cat_id = :id");
     $query->bindParam("id", $categoryId);
     $query->execute();

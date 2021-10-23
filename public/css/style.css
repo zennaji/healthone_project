@@ -109,9 +109,7 @@ html {
   color: #ffffff;
   position: relative;
   top: 50px;
-  left: 300px; 
-
-
+  left: 300px;
 }
 @media only screen and (max-width: 850px) {
   .hero-txt2 {
@@ -128,7 +126,7 @@ html {
     align-items: center;
   }
   .wl-btn {
-     left: 0; 
+    left: 0;
   }
 }
 .equipment-container h1 {
@@ -345,10 +343,11 @@ a {
   margin-left: 30px;
 }
 
-.rat-stars .stars , .rat-stars h4{
+.rat-stars .stars,
+.rat-stars h4 {
   margin-left: 80px;
 }
-.rating-reviews-btn{
+.rating-reviews-btn {
   /* background-color: chartreuse; */
   margin-top: -50px;
   display: flex;
@@ -596,17 +595,14 @@ a {
   .info-icon {
     width: 100%;
     display: flex;
-    
   }
-
 
   .info-icon-img {
-     /* text-align: center; */
-    margin: 0 auto; 
+    /* text-align: center; */
+    margin: 0 auto;
     justify-content: center;
-
   }
-  .info-txt{
+  .info-txt {
     text-align: center;
   }
 
@@ -713,29 +709,28 @@ footer {
   .membership-text p {
     font-size: 20px;
   }
-  
 }
-@media only screen and (max-width: 490px){
-  .reviews-container{
+@media only screen and (max-width: 490px) {
+  .reviews-container {
     padding: 10px;
   }
-  .rating-reviews h2{
+  .rating-reviews h2 {
     font-size: 35px;
   }
-  .rating-reviews h3{
+  .rating-reviews h3 {
     font-size: 20px;
   }
-  .stars-num{
+  .stars-num {
     font-size: 120px;
   }
-  .review-text{
+  .review-text {
     font-size: 18px;
     font-weight: lighter;
   }
-  .container-fluid{
+  .container-fluid {
     padding: 10px;
   }
-  .container-fluid .navbar-brand{
+  .container-fluid .navbar-brand {
     width: 60%;
   }
 }
@@ -926,56 +921,52 @@ footer {
     opacity: 1;
   }
 }
-.card-con{
+.card-con {
   display: flex;
-  
+
   justify-content: center;
 }
-.card{
-
+.card {
   margin: 5px;
   width: 300px;
   height: 450px;
 }
-.card img{
+.card img {
   width: 100%;
   height: 350px;
 }
-.card h3{
+.card h3 {
   text-align: center;
   font-size: 25px;
   color: #111111;
 }
 /* product pagina style */
-.product_container{
+.product_container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.product_container h3{
+.product_container h3 {
   color: #fff;
   margin: 30px;
 }
-.product_container .prod_pic{
+.product_container .prod_pic {
   width: 600px;
   padding: 20px;
-  
-
 }
-.product_container p{
+.product_container p {
   color: white;
   width: 80%;
   padding: 20px;
   line-height: normal;
- 
 }
 /* contact css */
-.contatct_container{
-  background-color:#dc4e68ab; 
+.contatct_container {
+  background-color: #dc4e68ab;
   display: flex;
   flex-direction: column;
-  border: 1px solid  rgba(3, 3, 3, 0.062);
+  border: 1px solid rgba(3, 3, 3, 0.062);
   border-radius: 12px;
   box-shadow: 0px 0px 10px 1px rgba(187, 186, 186, 0.349);
   align-items: center;
@@ -986,22 +977,31 @@ footer {
   margin: 80px auto;
 }
 
-.map{
+.map {
   margin: 7px;
   padding: 10px;
   width: 50%;
 }
-iframe{
+iframe {
   border-radius: 10px;
   width: 100%;
   height: 500px;
 }
-.title_contact{
+.title_contact {
   color: white;
   text-align: center;
 }
 
-.contact_description{
+.contact_description {
   color: #fff;
   font-size: 17px;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card {
+  margin: 10px;
 }

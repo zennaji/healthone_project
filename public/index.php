@@ -15,6 +15,7 @@ switch ($params[1]) {
         
         if (isset($_GET['category_id'])) {
             $categoryId = $_GET['category_id'];
+
             $products = getProducts($categoryId);
             $name = getCategoryName($categoryId);
 
@@ -29,16 +30,12 @@ switch ($params[1]) {
       
                  $titleSuffix = ' | ' . $product['name'];
 
-
                 if(isset($_POST['name']) && isset($_POST['review'])) {
                     saveReview($_POST['name'],$_POST['review']);
                     $reviews=getReviews($productId);
                 }
                 // TODO Zorg dat je hier de product pagina laat zien
                 
-
-
-
 
                // include_once "../Templates/product.php";
 
@@ -54,11 +51,8 @@ switch ($params[1]) {
             } 
         } else {
             // TODO Toon de categorieen
-
             $categories = getCategories();
-
             include_once "../Templates/categories.php";
-            
         }
         break;
 
