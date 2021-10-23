@@ -549,6 +549,7 @@ a {
 .soc_titel {
   font-size: 50px;
   padding: 20px;
+  color: #fff;
 }
 .soc_titel span {
   color: #dc4e68;
@@ -937,7 +938,14 @@ footer {
 
   margin: 5px;
   width: 300px;
+  height: 450px;
+}
+.card img{
+  width: 100%;
+  height: 350px;
 }
 .card h3{
   text-align: center;
+  font-size: 25px;
+  color: #111111;
 }
