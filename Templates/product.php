@@ -18,15 +18,12 @@ include_once('defaults/head.php');
                
         <?php
        
-       foreach ($productId as $data) {
-            echo "<h3>" . $data->name . "</h3>";
-            echo "<img class='card-img-top' src=" . $data->picture    . ">";
-            echo "<p>" . $data->description . "</p>";
-        
            
         
         
-       }
+       echo "<h3>" . $product['name'] . "</h3>";
+       echo "<img class='card-img-top' src=" . $product['picture']    . ">";
+       echo "<p>" . $product['description'] . "</p>";
        
         include_once('defaults/footer.php');
 

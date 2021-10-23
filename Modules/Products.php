@@ -1,4 +1,5 @@
 <?php
+include "Database.php";
 // TODO Zorg dat de methodes goed ingevuld worden met de juiste queries.
 
 
@@ -20,7 +21,7 @@ function getProduct(int $productId){
     $query = $pdo->prepare("SELECT * FROM product WHERE id = :id");
     $query->bindParam("id", $productId);
     $query->execute();
-    $request = $query->fetch(PDO::FETCH_CLASS, 'Product');
-    
+    $request = $query->fetch(PDO::FETCH_ASSOC);
+
     return $request;
 }
