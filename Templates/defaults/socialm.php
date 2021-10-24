@@ -6,8 +6,8 @@
         <ul>
             <li><a class="nav-link " href="/home">HOME</a></li>
             <li><a class="nav-link" href="/categories">SPORTAPPARAAT</a></li>
-            <li><a class="nav-link"  href="#">REGISTREREN</a></li>
-            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link"  href="/register">REGISTREREN</a></li>
+            <li><a class="nav-link" href="/contact">CONTACT</a></li>
         </ul>
     </div>
     <div class="soc_icon">

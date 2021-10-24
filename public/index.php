@@ -12,7 +12,7 @@ $titleSuffix = "";
 switch ($params[1]) {
     case 'categories':
         $titleSuffix = ' | Categories';
-        
+
         if (isset($_GET['category_id'])) {
             $categoryId = $_GET['category_id'];
 
@@ -20,26 +20,26 @@ switch ($params[1]) {
             $name = getCategoryName($categoryId);
 
             if (isset($_GET['product_id'])) {
-                $productId = $_GET['product_id'];               
+                $productId = $_GET['product_id'];
                 $product = getProduct($productId);
 
-            include_once "../Templates/product.php";
+                include_once "../Templates/product.php";
 
-        // echo "<h3>" . $product['name'] . "</h3>";
-      
-      
-                 $titleSuffix = ' | ' . $product['name'];
+                // echo "<h3>" . $product['name'] . "</h3>";
 
-                if(isset($_POST['name']) && isset($_POST['review'])) {
-                    saveReview($_POST['name'],$_POST['review']);
-                    $reviews=getReviews($productId);
+
+                $titleSuffix = ' | ' . $product['name'];
+
+                if (isset($_POST['name']) && isset($_POST['review'])) {
+                    saveReview($_POST['name'], $_POST['review']);
+                    $reviews = getReviews($productId);
                 }
                 // TODO Zorg dat je hier de product pagina laat zien
-                
 
-               // include_once "../Templates/product.php";
 
-                
+                // include_once "../Templates/product.php";
+
+
             } else {
                 // TODO Zorg dat je hier alle producten laat zien van een categorie
                 include_once "../Templates/products.php";
@@ -48,7 +48,7 @@ switch ($params[1]) {
                 //$product = getProduct($productId);
 
                 //var_dump($product);
-            } 
+            }
         } else {
             // TODO Toon de categorieen
             $categories = getCategories();
@@ -56,17 +56,26 @@ switch ($params[1]) {
         }
         break;
 
-        
+
     case 'contact':
         $titleSuffix = ' | Contant';
         include_once "../Templates/contact.php";
         break;
+    case 'register':
+        $titleSuffix = ' | register';
+        include_once "../Templates/register.php";
+        break;
+        case 'inloggen':
+            $titleSuffix = ' | inloggen';
+            include_once "../Templates/inloggen.php";
+            break;
     default:
         $titleSuffix = ' | Home';
         include_once "../Templates/home.php";
 }
 
-function getTitle() {
+function getTitle()
+{
     global $title, $titleSuffix;
     return $title . $titleSuffix;
 }

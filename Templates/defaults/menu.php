@@ -17,7 +17,7 @@
                     <a class="nav-link" href="/categories">SPORTAPPARAAT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="#">REGISTREREN</a>
+                    <a class="nav-link"  href="/register">REGISTREREN</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">CONTACT</a>
@@ -26,7 +26,7 @@
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> <button class="btn ">INLOGGEN</button> </a>
+                    <a class="nav-link" href="/inloggen"> <button class="btn ">INLOGGEN</button> </a>
                 </li>
             </ul>
         </div>
