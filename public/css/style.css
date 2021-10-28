@@ -1067,4 +1067,72 @@ iframe {
   font-size: 15px;
 
 }
+/* reviews section style */
 
+
+.reviews_container{
+  height: auto;
+  background-color: #dc4e68bd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reviews_form {
+  background-color: rgba(0, 0, 0, 0.425);
+  width:50%;
+  border-radius: 12px;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  margin: 20px;
+  
+ 
+  
+}
+.reviews_form  input, textarea{
+  width:55%;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 1px;
+  margin: 5px;
+  border: 1px solid red;
+
+}
+.reviews_form  textarea{
+  height: 160px;
+  
+
+
+}
+.rev_inputs{
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.rev_btns{
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+justify-content: flex-end;
+}
+select{
+  border: none;
+}
+
+.rev_btns button, .add_rev_btn{
+  margin: 5px;
+  border: 1px solid white;
+
+  color: #ffffff;
+  background-color: #dc4e68;
+  height: 35px;
+}
+
+.invisible{
+  display: none;
+}

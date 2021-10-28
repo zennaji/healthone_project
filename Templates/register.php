@@ -22,11 +22,12 @@ include_once('defaults/head.php');
                       in zodat we u een e-mail kunnen sturen om een
                        nieuw wachtwoord aan te maken.
                 </p>
-                <div class="login_inputs">
-                    <input type="text" placeholder="Email">
-                    <input type="number" placeholder="Pasnummer">
-                    <button class="login_button" type="submit" name="login" value="Log in">Aanmaken</button>
-                </div>
+                <form action="<?php $_SERVER['PHP_SELF'] ?>" method="Post" class="login_inputs">
+                    <input name="name" type="text" placeholder="naam" >
+                    <input name="email" type="text" placeholder="Email">
+                    <input name="password" type="password" placeholder="wachtwoord">
+                    <button name="submit" class="login_button" type="submit">Aanmaken</button>
+                </form>
                 <div class="login_choises">
                     <p><a href="/inloggen">Ik heb al een account</a>  <br>
                 </p>
@@ -34,6 +35,8 @@ include_once('defaults/head.php');
                 </div>
 
             </div>
+            <!-- ================ -->
+           
 
 
 
