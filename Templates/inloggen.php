@@ -9,7 +9,6 @@ include_once('defaults/head.php');
         <div class="row no-gutters">
 
             <?php
-            include_once('defaults/header.php');
             include_once('defaults/menu.php');
             ?>
 
@@ -18,7 +17,7 @@ include_once('defaults/head.php');
             <div class="login_container">
                 <img src="/img/logo.png" alt="helthone">
                 <div class="login_inputs">
-                    <input type="text" value="Email">
+                    <input type="text"  placeholder="Email">
                     <input type="password" placeholder="Wachtwoord">
                     <button class="login_button" placeholder="submit" name="login" value="Log in">LOG IN</button>
                 </div>

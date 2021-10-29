@@ -979,7 +979,6 @@ footer {
   width: 65%;
   margin: 80px auto;
 }
-
 .map {
   margin: 7px;
   padding: 10px;
@@ -994,7 +993,6 @@ iframe {
   color: white;
   text-align: center;
 }
-
 .contact_description {
   color: #fff;
   font-size: 17px;
@@ -1011,18 +1009,16 @@ iframe {
 .cards .card {
   margin: 10px;
 }
-
 /* Register page css */
 .login_container{
   background-color: #fc3e6a31;
   margin: 50px auto;
   width: 40%;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .login_container img{
   width: 200px;
@@ -1051,7 +1047,6 @@ iframe {
   border: none;
   font-weight: 400;
   line-height: 1.5;
-  
 }
 .login_choises a{
   color: white;
@@ -1065,11 +1060,8 @@ iframe {
   color: #FC3E6B;
   width: 50%;
   font-size: 15px;
-
 }
 /* reviews section style */
-
-
 .reviews_container{
   height: auto;
   background-color: #dc4e68bd;
@@ -1087,9 +1079,6 @@ iframe {
   height: auto;
   padding: 10px;
   margin: 20px;
-  
- 
-  
 }
 .reviews_form  input, textarea{
   width:55%;
@@ -1102,9 +1091,6 @@ iframe {
 }
 .reviews_form  textarea{
   height: 160px;
-  
-
-
 }
 .rev_inputs{
   display: flex;
@@ -1136,3 +1122,12 @@ select{
 .invisible{
   display: none;
 }
+
+/*  after make an account  */
+.after_make_acc{
+  margin: 0px auto;
+  width: 40%;
+  height: 100px;
+
+}
+

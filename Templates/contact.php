@@ -9,7 +9,6 @@ include_once('defaults/head.php');
         <div class="row no-gutters">
 
             <?php
-            include_once('defaults/header.php');
             include_once('defaults/menu.php');
 
             echo "

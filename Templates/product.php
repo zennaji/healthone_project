@@ -10,7 +10,6 @@ include_once('defaults/head.php');
 
 
     <?php
-    include_once('defaults/header.php');
     include_once('defaults/menu.php');
 
 
