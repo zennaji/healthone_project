@@ -56,7 +56,7 @@ switch ($params[1]) {
         }
         break;
 
-
+        
     case 'contact':
         $titleSuffix = ' | Contant';
         include_once "../Templates/contact.php";
@@ -69,6 +69,15 @@ switch ($params[1]) {
             $titleSuffix = ' | inloggen';
             include_once "../Templates/inloggen.php";
             break;
+        case 'login_success':
+            $titleSuffix = ' | login_success';
+            include_once "../Templates/login_success.php";
+            break;
+        case 'uitloggen':
+            $titleSuffix = ' | uitloggen';
+            include_once "../Templates/uitloggen.php";
+            break;
+            
     default:
         $titleSuffix = ' | Home';
         include_once "../Templates/home.php";
