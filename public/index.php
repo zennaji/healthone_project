@@ -77,6 +77,10 @@ switch ($params[1]) {
             $titleSuffix = ' | uitloggen';
             include_once "../Templates/uitloggen.php";
             break;
+        case 'dashboard':
+            $titleSuffix = ' | dashboard';
+            include_once "../Templates/dashboard.php";
+            break;
             
     default:
         $titleSuffix = ' | Home';

@@ -2,7 +2,7 @@
     <div class="reviews_container">
 
         <button class="add_rev_btn" >Add reviews</button>
-        <div class="reviews_form">
+        <div class="reviews_form invisible">
             <form action="">
                 <div class="rev_inputs">
                     <input type="text" placeholder="Full name"> 
