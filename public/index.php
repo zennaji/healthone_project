@@ -2,6 +2,7 @@
 require '../Modules/Categories.php';
 require '../Modules/Products.php';
 require '../Modules/Reviews.php';
+require '../Modules/Users.php';
 require '../Modules/Database.php';
 session_start();
 $request = $_SERVER['REQUEST_URI'];
@@ -16,7 +17,6 @@ switch ($params[1]) {
 
         if (isset($_GET['category_id'])) {
             $categoryId = $_GET['category_id'];
-
             $products = getProducts($categoryId);
             $name = getCategoryName($categoryId);
 
@@ -31,10 +31,59 @@ switch ($params[1]) {
 
                 $titleSuffix = ' | ' . $product['name'];
 
-                if (isset($_POST['name']) && isset($_POST['review'])) {
-                    saveReview($_POST['name'], $_POST['review']);
-                    $reviews = getReviews($productId);
+                // if (isset($_POST['name']) && isset($_POST['review'])) {
+                //     saveReview($_POST['name'], $_POST['review']);
+                //     $reviews = getReviews($productId);
+                // }
+                // include_once "../Templates/defaults/product_reviews.php";
+                $errors = [
+                    'nameError' => '',
+                    'descriptionError' => '',
+                ];
+               
+                // include "../Modules/Database.php";
+                if (isset($_POST['submit'])) {
+            
+                        $name = strip_tags(filter_input(INPUT_POST, 'name'));   // in plaats van dit : $name = strip_tags($_POST['name']);
+                        if (empty($name) || ctype_space($name)) {  
+                            $errors['nameError'] = 'Voer je naam in!';   
+                        }
+
+                        $description = strip_tags(filter_input(INPUT_POST, 'description', FILTER_SANITIZE_SPECIAL_CHARS));
+                        if (empty($description) || ctype_space($description)) {   
+                            $errors['descriptionError'] = 'Voer je view in!';   
+                        }
+                    
+                        $stars = filter_input(INPUT_POST, 'stars', FILTER_VALIDATE_INT);                        
+                    
+                        if (isset($_POST['user_id'])) {
+                            $userId = strip_tags($_POST['user_id']);
+                            if (empty($userId) || ctype_space($description)) {   
+                                $errors['descriptionError'] = 'Je moet ingelogd zijn voor een review';   
+                            }
+                            
+                        }
+            
+                    
+                        if (isset($_POST['product_id'])) {
+                            $productId = strip_tags($_POST['product_id']);   
+                        }
+            
+                        if (!array_filter($errors)) {
+                            //session_start();
+                            saveReview($name,$description,$stars,$userId,$productId);
+                            
+                           
+                            
+                        } else {
+                        
+                            // echo 'query error: ' . mysqli_error($dsn);
+                            echo 'query error: ';
+                        }
                 }
+                
+
+
                 // TODO Zorg dat je hier de product pagina laat zien
 
 
