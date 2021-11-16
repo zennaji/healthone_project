@@ -13,7 +13,7 @@ include_once('defaults/head.php');
             <!--  -->
             <?php 
             // array makem om de error message hier op te slaan.
-            session_start();
+            //session_start();
             $errorsLogin = [
                 'emailError' => '',
                 'passwordError' => '',
@@ -61,15 +61,19 @@ include_once('defaults/head.php');
                         if($count > 0){
                             $_SESSION["email"] = $_POST["email"];
                             header("location:/login_success");
+                            
                         //     echo '
                         // <div class="after_make_acc">
                         //     <h5 style="color:#dc4e68;text-align:center;">Welcome.. U bent ingellogd ! </h5>
                         //     <p style="text-align:center;"><a style="color:white;" href="/inloggen">Uitloggen</a></p>
                         // </div>
                         // ';
+                            
+                        
                         
                         }
                         else{
+                            
                             echo '
                         <div class="after_make_acc">
                             <h5 style="color:#dc4e68;text-align:center;">U bent niet ingellogd ! </h5>

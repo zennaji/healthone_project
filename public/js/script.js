@@ -36,5 +36,3 @@ alert("Deze product word verwijderd !")
 
 });
 
-  
-  

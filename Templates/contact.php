@@ -2,6 +2,7 @@
 <html>
 <?php
 include_once('defaults/head.php');
+//session_start();
 ?>
 
 <body>

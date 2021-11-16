@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <html>
     <?php
+    //session_start();
     include_once('defaults/head.php');
     ?>
     <body>
@@ -8,6 +9,7 @@
             <div class="row no-gutters">
 
             <?php
+            
             include_once ('defaults/menu.php');
             include_once ('defaults/pictures.php');
             include_once ('defaults/equipment.php');
