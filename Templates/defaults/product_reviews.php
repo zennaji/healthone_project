@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
 
         if (!array_filter($errors)) {
-            session_start();
+           //session_start();
             $q = "INSERT INTO reviews (title,description,stars, user_id, product_id) VALUES ('$name', '$description', '$stars', '$userId', '$productId')";
             $stmt = $pdo->prepare($q);
             $stmt->execute();
