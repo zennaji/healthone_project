@@ -1251,3 +1251,59 @@ color: white;
   height: 450px;
   margin: 20px;
 }
+
+.products-review{
+  display: flex;
+  border: #ffffff 1px solid;
+  padding: 10px 50px;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.product-review{
+  background-color: #6b1839;
+  color: #fff;
+  width: 280px;
+  height: 300px;
+  margin: 5px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.product-review div{
+  font-size: 18px;
+  margin-bottom: -20px;
+  
+}
+.product-review .kye{
+  
+  margin-left: 10px;
+  margin-right: 5px;
+
+}
+.product-review .description{
+  background-color: rgba(0, 0, 0, 0.064);
+  padding: -0px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  
+}
+option{
+  background-color: rgba(89, 0, 0, 0.829);
+}
+.product-reviews-tit{
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+  font-size: 44px;
+  color: #fff;
+  margin-bottom: 40px;
+}

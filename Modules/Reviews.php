@@ -1,4 +1,5 @@
-<?php function saveReview($name,$description,$stars,$userId,$productId){
+<?php 
+function saveReview($name,$description,$stars,$userId,$productId){
     global $pdo;
     $q = "INSERT INTO reviews (`title`, `description`, `stars`, `user_id`, `product_id`) VALUES (:name, :description, :stars, :userId, :productId)";
     $stmt = $pdo->prepare($q);
@@ -12,19 +13,15 @@
     
     
  }
- function getReviews(){
+function getReviews(int $productId){
 
    // reviews from database print
    global $pdo;
-    $stmt = $pdo->prepare("SELECT * FROM reviews");
+    $stmt = $pdo->prepare("SELECT * FROM reviews WHERE product_id = :id");
+    $stmt->bindParam("id", $productId);
     $stmt->execute();
-    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    foreach ($result as &$data) {
-        echo "<tr>";
-        echo "<td>" . $data["name"] . "</td>";
-        echo "<td>" . $data["description"] . "</td>";
-        echo "<tr>";
-    }
+    $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'Review');
+   
     return $result;
 } 
 

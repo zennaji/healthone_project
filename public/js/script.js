@@ -6,7 +6,7 @@ if (addBtn) {
     revSection.classList.toggle("invisible");
     revSection.classList.toggle("visible");
 
-   });
+  });
 }
 //dashboard page script         
 // Producten tonen als je op product clickt
@@ -14,25 +14,64 @@ const editBtn = document.querySelector(".editpro_btn");
 const deleteBtn = document.querySelector(".delete_btn");
 const editForm = document.querySelector(".edit_form");
 
-editBtn.addEventListener("click", function () {
-  editForm.classList.toggle("invisible");
-  editForm.classList.toggle("visible");
 
-});
-//
-deleteBtn.addEventListener("click", function () {
-alert("Deze product word verwijderd !")
-  
+
+if (editBtn) {
+  editBtn.addEventListener("click", function () {
+    editForm.classList.toggle("invisible");
+    editForm.classList.toggle("visible");
+
   });
+}
+
+if (deleteBtn) {
+  deleteBtn.addEventListener("click", function () {
+
+    alert("Deze product word verwijderd !")
+
+  });
+}
+//
 
 
-  // add product
-  const addProd = document.querySelector(".add_product_btn");
-  const addProdSec = document.querySelector(".add_pro_section");
 
+// add product
+const addProd = document.querySelector(".add_product_btn");
+const addProdSec = document.querySelector(".add_pro_section");
+
+if(addProd){
   addProd.addEventListener("click", function () {
     addProdSec.classList.toggle("invisible");
     addProdSec.classList.toggle("visible");
+  
+  });
+}
 
-});
+
+const stars = document.querySelectorAll('.stars');
+
+if(stars){
+  for(let i = 0; i < stars.length; i++){
+    if(stars[i].textContent === " 1 "){
+      stars[i].textContent += "⭐";
+    }
+    if(stars[i].textContent === " 2 "){
+      stars[i].textContent += "⭐⭐";
+    }
+    
+    if(stars[i].textContent === " 3 "){
+      stars[i].textContent += "⭐⭐⭐";
+    }
+    
+    if(stars[i].textContent === " 4 "){
+      stars[i].textContent += "⭐⭐⭐⭐";
+    }
+    if(stars[i].textContent === " 5 "){
+      stars[i].textContent += "⭐⭐⭐⭐⭐";
+    }
+  }
+}
+
+
+
 

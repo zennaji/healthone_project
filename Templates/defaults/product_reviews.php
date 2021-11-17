@@ -14,11 +14,11 @@
                     <textarea type="text" name="description" placeholder="Wat is jouw view ?"  rows="4" value="<?php echo $description ?>"></textarea>
                     <!-- <div class="form-text  text-muted error"> <?php //echo $errors['descriptionError']  ?></div> -->
                     <select id="stars" name="stars" value="<?php echo $stars ?>">
-                    <option value="1">1</option> 
-                    <option value="2">2</option> 
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="1"> 1 ⭐</option> 
+                    <option value="2"> 2 ⭐⭐</option> 
+                    <option value="3"> 3 ⭐⭐⭐</option>
+                    <option value="4"> 4 ⭐⭐⭐⭐</option>
+                    <option value="5"> 5 ⭐⭐⭐⭐⭐</option>
                     </select>
                 </div>
                 
@@ -28,4 +28,30 @@
                 </div>
             </form>
         </div>
+        <div class="products-review">
+            <h2 class="product-reviews-tit"> Product reviews </h2>
+
+            <?php
+                $rev = getReviews($productId);
+
+                foreach ($rev as $data) {
+                    echo "<div class='product-review'>";
+
+                    
+                    echo "<div> <span class='kye'> Naam: </span> " . $data->title .  "</div> <br/> ";
+
+                    echo "<div> <span class='kye'> staren: </span> <span class='stars'> ".$data->stars." </span> </div> <br/> ";
+
+                    echo "<div> <span class='kye'> Description: </span> <span class='description'> " . $data->description .  " <span> </div> <br/> ";
+                    
+
+                    echo "</div>";
+                }
+            ?>
+
+        </div>
+
+        
+
+
     </div>
