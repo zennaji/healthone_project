@@ -69,8 +69,6 @@ include_once('defaults/head.php');
                         // </div>
                         // ';
                             
-                        
-                        
                         }
                         else{
                             
@@ -82,11 +80,6 @@ include_once('defaults/head.php');
                         ';
 
                         }
-                        
-
-
-
-
                         
                     }
                 }
