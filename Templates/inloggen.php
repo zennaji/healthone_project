@@ -73,11 +73,11 @@ include_once('defaults/head.php');
                         else{
                             
                             echo '
-                        <div class="after_make_acc">
-                            <h5 style="color:#dc4e68;text-align:center;">U bent niet ingellogd ! </h5>
-                            <p style="text-align:center; color:white;">Faild ! try again .</p>
-                        </div>
-                        ';
+                                <div class="after_make_acc">
+                                    <h5 style="color:#dc4e68;text-align:center;">U bent niet ingellogd ! </h5>
+                                    <p style="text-align:center; color:white;">Faild ! try again .</p>
+                                </div>
+                            ';
 
                         }
                         
