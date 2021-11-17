@@ -1240,6 +1240,8 @@ color: white;
  
 /* End dashboard style */
 
+
+/* product review style */
 .add_product_btn{
   background-color: #00000025;
   border: 1px solid #dc4e68;
@@ -1262,7 +1264,6 @@ color: white;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  border-radius: 20px;
   margin-top: 50px;
   margin-bottom: 20px;
 }
@@ -1322,9 +1323,8 @@ option{
 }
 .product-reviews-tit{
   text-align: center;
-  text-decoration: underline;
   width: 100%;
   font-size: 44px;
   color: #fff;
-  margin-bottom: 40px;
+  margin: 30px 10px;
 }

@@ -72,6 +72,7 @@ switch ($params[1]) {
                     if (!array_filter($errors)) {
                         //session_start();
                         saveReview($name,$description,$stars,$userId,$productId);
+                       
                         
                         
                         
