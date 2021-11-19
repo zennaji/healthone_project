@@ -38,11 +38,11 @@
                     echo "<div class='product-review'>";
 
                     
-                    echo "<div> <span class='kye'> Naam: </span> " . $data->title .  "</div> <br/> ";
+                    echo "<div class='flex'> <span class='kye'> Naam: </span> <span class='val'>" . $data->title .  " </span> </div> <br/> ";
 
-                    echo "<div> <span class='kye'> staren: </span> <span class='stars'> ".$data->stars." </span> </div> <br/> ";
+                    echo "<div class='flex'> <span class='kye'> staren: </span> <span class='stars val'> ".$data->stars." </span> </div> <br/> ";
 
-                    echo "<div> <span class='kye'> Description: </span> <span class='description'> " . $data->description .  " <span> </div> <br/> ";
+                    echo "<div class='m-l'> <span class=''> Description:</span><span class='description val'>" . $data->description . "<span> </div> <br/> ";
                     
 
                     echo "</div>";

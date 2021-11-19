@@ -16,12 +16,13 @@ function saveReview($name,$description,$stars,$userId,$productId){
 function getReviews(int $productId){
 
    // reviews from database print
-   global $pdo;
+    global $pdo;
     $stmt = $pdo->prepare("SELECT * FROM reviews WHERE product_id = :id");
     $stmt->bindParam("id", $productId);
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'Review');
-   
+    
     return $result;
+    
 } 
 

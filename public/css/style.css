@@ -1254,6 +1254,8 @@ color: white;
   margin: 20px;
 }
 
+
+
 .products-review{
   display: flex;
   border: #ffffff 1px solid;
@@ -1265,6 +1267,7 @@ color: white;
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
 .product-review{
   background-color: #6b1839;
   color: #fff;
@@ -1277,18 +1280,15 @@ color: white;
   padding: 10px;
   margin-bottom: 20px;
   overflow: auto;
+  padding-right: 15px;
+  
 }
 .product-review div{
   font-size: 18px;
   margin-bottom: -20px;
   
 }
-.product-review .kye{
-  
-  margin-left: 10px;
-  margin-right: 5px;
 
-}
 .product-review .description{
   background-color: rgba(0, 0, 0, 0.064);
   padding: -0px 5px;
@@ -1297,6 +1297,27 @@ color: white;
   font-family: "Times New Roman", Times, serif;
   
 }
+.flex{
+  width: 100%;
+  display: flex;
+  
+}
+.product-review .val{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 10px;
+}
+.m-l{
+  margin-left: 10px;
+}
+.product-review .kye{
+  margin-left: 10px;
+  margin-right: 5px;
+  text-align: left;
+
+}
+
 option{
   background-color: rgba(89, 0, 0, 0.829);
 }
