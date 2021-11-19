@@ -15,7 +15,7 @@ function saveUser(){
    global $pdo;
     $stmt = $pdo->prepare("SELECT * FROM users");
     $stmt->execute();
-    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'User');
     // foreach ($result as &$data) {
     //     echo "<tr>";
     //     echo "<td>" . $data["name"] . "</td>";

@@ -64,6 +64,10 @@ echo '<nav class="navbar  navbar-dark  navbar-expand-lg " >
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">CONTACT</a>
                 </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">DASHBOARD</a>
+                </li>
 
             </ul>
             <ul class="navbar-nav ms-auto">
