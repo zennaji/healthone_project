@@ -35,10 +35,11 @@ function getProducts2(){
     return $request;
 }
 
-function updateProduct($prodName,$prodImg,$prodDescription){
+function updateProduct($prodName,$prodImg,$prodDescription,$id){
     global $pdo;
 
-    $query = $pdo->prepare("UPDATE `product` SET name = $prodName, picture = $prodImg, description =  $prodDescription WHERE id= '14'");
+    // $query = $pdo->prepare("UPDATE `product` SET name = $prodName, picture = $prodImg, description =  $prodDescription WHERE id= '14'"); ($name,$description,$stars,$userId,$productId
+    $query = $pdo->prepare("UPDATE `product` SET `name`='$prodName',`picture`='$prodImg',`description`='$prodDescription' WHERE id =  $id ");
     $query->execute();
     $request = $query;
 

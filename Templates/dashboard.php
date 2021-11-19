@@ -49,12 +49,13 @@ include_once('defaults/head.php');
                                     <p>VERWIJDEREN <i class='delete_btn far fa-trash-alt'></i></p>
                                 </div>
                         </div>  ";
-                        echo " <div class='edit_form invisible'>
+                    echo " <div class='edit_form invisible'>
                                 <form action='' method='Post' class=''>
+                                    <input type='hidden' id='prodId' name='prodId' value='$data->id'><br>
                                     <label for='title'>TITLE:</label><br>
                                     <input type='text' id='title' name='prodName' value='$data->name'><br>
                                     <label for='prod_img'>PHOTO:</label><br>
-                                    <input type='text' id='prod_img' name='prodImg' value='$data->picture'><br>
+                                    <input type='file' id='prod_img' name='prodImg' value='$data->picture'><br>
                                     <label for='prod_desc'>Description:</label><br>
                                     <textarea type='text' id='prod_desc' name='prodDescription' value=''>$data->description</textarea><br>
                                     <button  type='submit' name='edit' class='edit_btn'  >Wijzigen</button>
@@ -62,6 +63,10 @@ include_once('defaults/head.php');
                             </div>
                         </div>
                         ";
+                    // echo $data->picture;
+                    if (isset($_FILES["file"])) {
+                        echo realpath($_FILES["file"]["tmp_name"]);
+                    }
                 }
                 ?>
             </div>
