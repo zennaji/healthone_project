@@ -22,7 +22,7 @@ include_once('defaults/head.php');
                             <li><i class="fa fa-users"> </i> Producten</li>
                         </a>
                         <a href="">
-                            <li><i class="fa fa-sign-out"></i> Categorieen</li>
+                            <li><i class="fa fa-sign-out"></i> Categorieen</li
                         </a>
                         <a href="">
                             <li><i class="fa fa-sign-out"></i> Users</li>
@@ -74,15 +74,23 @@ include_once('defaults/head.php');
             <button class="add_product_btn">Voeg een apparaat toe <i class="far fa-plus-square"></i></button>
             <div class="add_pro_section invisible">
                 <div class="edit_form ">
-                    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="Post" class="">
+                    <form action="" method="Post">
                         <label for="title">TITLE:</label><br>
                         <input type="text" id="title" name="name" value=""><br>
                         <label for="category">CATEGORY:</label><br>
                         <select name="category" id="category" class="category_">
-                            <option value="">category1 </option>
-                            <option value="">category2 </option>
-                            <option value="">category3 </option>
-                            <option value="">category4 </option>
+                        <?php 
+                        foreach ($categ as $data) {
+                            echo "<option value='$data->id'>$data->name </option>";
+
+                        }
+                        ?>
+                        
+
+                            <!-- <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option> -->
                         </select><br>
                         <label for="prod_img">PHOTO:</label><br>
                         <input type="file" id="prod_img" name="img" value=""><br>

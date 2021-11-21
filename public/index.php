@@ -131,6 +131,7 @@ switch ($params[1]) {
         case 'dashboard':
             $titleSuffix = ' | dashboard';
             $prod = getProducts2();
+            $categ = getCategories();
             include_once "../Templates/dashboard.php";
             if (isset($_POST['edit'])) {
                 $id =  filter_input(INPUT_POST, 'prodId');
@@ -140,6 +141,16 @@ switch ($params[1]) {
                 
 
                 updateProduct($prodName,$prodImg,$prodDescription,$id);
+
+            }
+            if (isset($_POST['addprod'])) {
+                $name =  filter_input(INPUT_POST, 'name');
+                $category = filter_input(INPUT_POST, 'category');
+                $img = filter_input(INPUT_POST, 'img');
+                $description = filter_input(INPUT_POST, 'description');
+                
+
+                addProduct($name,$category,$img,$description);
 
             }
            

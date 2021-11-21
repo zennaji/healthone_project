@@ -46,12 +46,18 @@ function updateProduct($prodName,$prodImg,$prodDescription,$id){
     return $request;
 }
 
-// function deleteProduct($prodName){
-//     global $pdo;
+function addProduct($name,$category,$img,$description){
+    global $pdo;
+    
+    $q = "INSERT INTO product (name, cat_id, picture, description) VALUES (:name, :category, :img, :description)";
+    $stmt = $pdo->prepare($q);
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':category', $category);
+    $stmt->bindParam(':img', $img);
+    $stmt->bindParam(':description', $description);
+    
+    $stmt->execute();
+    $request = $stmt;
 
-//     $query = $pdo->prepare("DELETE FROM product WHERE name=$prodName");
-//     $query->execute();
-//     $request = $query;
-
-//     return $request;
-// }
+    return $request;
+}
