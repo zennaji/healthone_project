@@ -15,6 +15,7 @@ include_once('defaults/head.php');
 
         if(isset($_SESSION["email"])){
             include_once('defaults/menu.php');
+            include_once('access.php');
 
             echo ' <div class="after_make_acc">';
             echo '<h4 style="color:#dc4e68;text-align:center;" >Login Success, Welcom -' .$_SESSION["email"].'</h4> <br>';
