@@ -17,7 +17,7 @@ const editForm = document.querySelectorAll(".edit_form");
 
 
 if (editBtn) {
-
+   
   for(let i = 0; i< editBtn.length; i++){
     editBtn[i].addEventListener("click", function () {
 
@@ -82,6 +82,15 @@ if(stars){
     }
   }
 }
+
+// 
+
+const pict = document.querySelector(".pict");
+const all_dd = document.querySelector(".all_dd");
+
+pict.addEventListener("click", function(){
+  all_dd.classList.toggle("active");
+	})
 
 
  

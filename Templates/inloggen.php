@@ -47,8 +47,17 @@ include_once('defaults/head.php');
                     if($count > 0){
                         $user = $login->fetch();
                         $_SESSION["email"] = $user->email;
+                        $_SESSION["name"] = $user->name;
                         $_SESSION["myrole"] = $user->role;
-                        header("location:/login_success");
+
+                        if($_SESSION["myrole"] == 'admin'){
+                            header("location:/dashboard");
+                        }else{
+
+                            header("location:/home");
+                        }
+
+                        
                           
                     }
                     else{
@@ -65,16 +74,8 @@ include_once('defaults/head.php');
                 }
             }
 
-               
-            
             
            ?>
-
-
-
-
-
-
             <!-- Inloggen section -->
             <div class="login_container">
                 <img src="/img/logo.png" alt="helthone">

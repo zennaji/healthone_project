@@ -19,7 +19,7 @@ include_once('defaults/head.php');
 
             echo ' <div class="after_make_acc">';
             echo '<h4 style="color:#dc4e68;text-align:center;" >Login Success, Welcom -' .$_SESSION["email"].'</h4> <br>';
-            echo '<p style="text-align:center;"><a style="color:white;" href="/uitloggen">Uitloggen</a></p>';
+            echo '<p style="text-align:center;"><a style="color:white;" href="/uitloggen">Uitloggen </a></p>';
             echo ' </div>';
             //include_once('dashboard.php');
         }
@@ -27,12 +27,6 @@ include_once('defaults/head.php');
             header('location: /inloggen');
         }
 
-
-        ?>
-
-
-
-        <?php
         include_once('defaults/footer.php');
         ?>
     </div>
