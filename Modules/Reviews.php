@@ -2,7 +2,9 @@
 function saveReview($name,$description,$stars,$userId,$productId){
     global $pdo;
     $q = "INSERT INTO reviews (`title`, `description`, `stars`, `user_id`, `product_id`) VALUES (:name, :description, :stars, :userId, :productId)";
+    
     $stmt = $pdo->prepare($q);
+
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':stars', $stars);
