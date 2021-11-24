@@ -136,7 +136,11 @@ switch ($params[1]) {
             $titleSuffix = ' | dashboard';
             $prod = getProducts2();
             $categ = getCategories();
+            if($_SESSION["myrole"] == 'admin' ) {
             include_once "../Templates/dashboard.php";
+            }else{
+                header("location:/404");
+            }
             if (isset($_POST['edit'])) {
                 $id =  filter_input(INPUT_POST, 'prodId');
                 $prodName = filter_input(INPUT_POST, 'prodName');
@@ -163,6 +167,10 @@ switch ($params[1]) {
                 // }
             }
             break;
+            case '404':
+                $titleSuffix = ' | 404 Error';
+                include_once "../Templates/404.php";
+                break;
             
     default:
         $titleSuffix = ' | Home';

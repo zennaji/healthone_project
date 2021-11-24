@@ -76,7 +76,7 @@ if(!isset($_SESSION["email"])){
                 <img class="pict" src="./public/img/userProfile.png" alt="profile_img">
 					<div class="all_dd">
                     <div class="pers_info">
-                        <img class="" src="https://i.imgur.com/2QKIaJ5.png" width="85px" alt="profile_img">
+                        <img class="" src="./public/img/userProfile.png" width="85px" alt="profile_img">
                         <h4>' . $_SESSION["name"] . '</h4>
                         <P>' . $_SESSION["email"] . '</P>
                     </div>

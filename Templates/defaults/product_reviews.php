@@ -4,7 +4,7 @@
 ?>
     <div class="reviews_container">
 
-        <button class="add_rev_btn" >Add reviews</button>
+        <button class="add_rev_btn" >Add review</button>
         <div class="reviews_form invisible">
             <form action="" method="POST">
                 <div class="rev_inputs">
@@ -29,8 +29,10 @@
                 </div>
             </form>
         </div>
-        <div class="products-review">
-            <h2 class="product-reviews-tit"> Product reviews </h2>
+        <button class="see_rev_btn" >See rewiews</button>
+
+        <div class="products-review invisible">
+            <h2 class="product-reviews-tit">REWIEWS</h2>
 
             <?php
                 $rev = getReviews($productId);
@@ -39,11 +41,11 @@
                     echo "<div class='product-review'>";
 
                     
-                    echo "<div class='flex'> <span class='kye'> Naam: </span> <span class='val'>" . $data->title .  " </span> </div> <br/> ";
+                    echo "<div class='flex'>  <span class='val'>" . $data->title .  " </span> </div> <br/> ";
 
-                    echo "<div class='flex'> <span class='kye'> staren: </span> <span class='stars val'> ".$data->stars." </span> </div> <br/> ";
+                    echo "<div class='flex'>  <span class='stars val'> ".$data->stars." </span> </div> <br/> ";
 
-                    echo "<div class='m-l'> <span class=''> Description:</span><span class='description val'>" . $data->description . "<span> </div> <br/> ";
+                    echo "<div class='m-l'> <span class='description val'>" . $data->description . "<span> </div> <br/> ";
                     
 
                     echo "</div>";
