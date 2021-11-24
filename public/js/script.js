@@ -10,26 +10,37 @@ if (addBtn) {
 }
 //dashboard page script         
 // Producten tonen als je op product clickt
-const editBtn = document.querySelector(".editpro_btn");
-const deleteBtn = document.querySelector(".delete_btn");
-const editForm = document.querySelector(".edit_form");
+const editBtn = document.querySelectorAll(".editpro_btn");
+const deleteBtn = document.querySelectorAll(".delete_btn");
+const editForm = document.querySelectorAll(".edit_form");
 
 
 
 if (editBtn) {
-  editBtn.addEventListener("click", function () {
-    editForm.classList.toggle("invisible");
-    editForm.classList.toggle("visible");
+   
+  for(let i = 0; i< editBtn.length; i++){
+    editBtn[i].addEventListener("click", function () {
 
-  });
+      for(let j = 0; j<editForm.length; j++){
+
+        editForm[i].classList.toggle("invisible");
+        editForm[i].classList.toggle("visible");
+      }
+    });
+  }
+
+
+  
 }
-
+// Delete button 
 if (deleteBtn) {
-  deleteBtn.addEventListener("click", function () {
+    for(let i = 0; i< editBtn.length; i++){
+      deleteBtn[i].addEventListener("click", function () {
+  
+        alert("Deze product word verwijderd !")
 
-    alert("Deze product word verwijderd !")
-
-  });
+      });
+    }
 }
 //
 
@@ -47,7 +58,7 @@ if(addProd){
   });
 }
 
-
+// stereen 
 const stars = document.querySelectorAll('.stars');
 
 if(stars){
@@ -72,6 +83,17 @@ if(stars){
   }
 }
 
+// 
+
+const pict = document.querySelector(".pict");
+const all_dd = document.querySelector(".all_dd");
+
+pict.addEventListener("click", function(){
+  all_dd.classList.toggle("active");
+	})
+
+
+ 
 
 
 

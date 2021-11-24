@@ -108,17 +108,21 @@ switch ($params[1]) {
         break;
 
         
-    case 'contact':
-        $titleSuffix = ' | Contant';
-        include_once "../Templates/contact.php";
-        break;
-    case 'register':
-        $titleSuffix = ' | register';
-        include_once "../Templates/register.php";
-        break;
+        case 'contact':
+            $titleSuffix = ' | Contant';
+            include_once "../Templates/contact.php";
+            break;
+        case 'register':
+            $titleSuffix = ' | register';
+            include_once "../Templates/register.php";
+            break;
         case 'inloggen':
             $titleSuffix = ' | inloggen';
             include_once "../Templates/inloggen.php";
+            // inloggen 
+            
+           
+             
             break;
         case 'login_success':
             $titleSuffix = ' | login_success';
@@ -130,7 +134,27 @@ switch ($params[1]) {
             break;
         case 'dashboard':
             $titleSuffix = ' | dashboard';
+            $prod = getProducts2();
+            $categ = getCategories();
             include_once "../Templates/dashboard.php";
+            if (isset($_POST['edit'])) {
+                $id =  filter_input(INPUT_POST, 'prodId');
+                $prodName = filter_input(INPUT_POST, 'prodName');
+                $prodImg = filter_input(INPUT_POST, 'prodImg');
+                $prodDescription = filter_input(INPUT_POST, 'prodDescription');
+                
+
+                updateProduct($prodName,$prodImg,$prodDescription,$id);
+
+            }
+            if (isset($_POST['addprod'])) {
+                $name =  filter_input(INPUT_POST, 'name');
+                $category = filter_input(INPUT_POST, 'category');
+                $img = filter_input(INPUT_POST, 'img');
+                $description = filter_input(INPUT_POST, 'description');
+                
+                addProduct($name,$category,$img,$description);
+            }
             break;
             
     default:
