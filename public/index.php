@@ -151,9 +151,16 @@ switch ($params[1]) {
                 $name =  filter_input(INPUT_POST, 'name');
                 $category = filter_input(INPUT_POST, 'category');
                 $img = filter_input(INPUT_POST, 'img');
+                // $target = "img/".basename($_FILES['img']['name']);
+                // $img = $_FILES['img']['name'];
                 $description = filter_input(INPUT_POST, 'description');
                 
                 addProduct($name,$category,$img,$description);
+                // if(addProduct($name,$category,$img,$description)){
+                //     // $msg = "De image is aploaded";
+                //     move_uploaded_file(filter_input(INPUT_POST, 'img')['tmp_name'], $img);
+
+                // }
             }
             break;
             

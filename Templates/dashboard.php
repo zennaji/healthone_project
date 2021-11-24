@@ -84,15 +84,8 @@ include_once('defaults/head.php');
                         <?php 
                         foreach ($categ as $data) {
                             echo "<option value='$data->id'>$data->name </option>";
-
                         }
                         ?>
-                        
-
-                            <!-- <option value="1">1 </option>
-                            <option value="2">2 </option>
-                            <option value="3">3 </option>
-                            <option value="4">4 </option> -->
                         </select><br>
                         <label for="prod_img">PHOTO:</label><br>
                         <input type="file" id="prod_img" name="img" value=""><br>
@@ -106,8 +99,6 @@ include_once('defaults/head.php');
 
         </div>
     </div>
-
-
     <?php
     include_once('defaults/footer.php');
     ?>

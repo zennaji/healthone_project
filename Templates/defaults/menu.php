@@ -7,11 +7,6 @@ function getDashboard(){
         }
        return $item; 
 }
-
-
-
-
-
 if(!isset($_SESSION["email"])){
     echo ' <nav class="navbar  navbar-dark  navbar-expand-lg " >
     <div class="container-fluid">
