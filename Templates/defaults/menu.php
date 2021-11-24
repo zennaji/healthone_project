@@ -77,7 +77,7 @@ if(!isset($_SESSION["email"])){
 					<div class="all_dd">
                     <div class="pers_info">
                         <img class="" src="https://i.imgur.com/2QKIaJ5.png" width="85px" alt="profile_img">
-                        <h4>' . $_SESSION["email"] . '</h4>
+                        <h4>' . $_SESSION["name"] . '</h4>
                         <P>' . $_SESSION["email"] . '</P>
                     </div>
                         <div class="dd_menu">
