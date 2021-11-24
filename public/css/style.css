@@ -1328,6 +1328,7 @@ option{
 .pict{
   width: 40px;
   cursor: pointer;
+  
 }
 .all_dd{
   background-color: #fff;
@@ -1402,4 +1403,75 @@ border-color: transparent transparent #fff transparent;
 }
 .active{
 display: block;
+}
+
+@media only screen and (max-width: 991px) {
+  .pict {
+    position: absolute;
+    top: 20px; 
+    left: 20px;  
+    width: 60px;
+  }
+  #myNavbar{
+    margin-top: 10px;
+    margin-left: 3vw;
+  }
+  .logo{
+    /* background-color: red; */
+    width: 180px; 
+    margin: 0 auto;
+    position: relative;
+    left: 7vw;
+  }
+  .logo-img{
+    width: 100%;
+  }
+  .nav-link-mob{
+    text-align: center;
+    font-size: 18px;
+  }
+  .all_dd{
+    /* display: none; */
+    left: 20px;
+
+
+  }
+  .dd_menu:before{
+    right: 100%;
+    left: 40px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .logo{
+    
+    width: 200px; 
+    margin: 0 auto;
+    position: relative;
+    left: 7vw;
+    
+    display: flex;
+   
+    
+  }
+  .logo-img{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    /* justify-content: center; */
+    
+  }
+  .navbar-con{
+    padding: 0;
+    margin-top: -10px;
+  }
+  .pict {
+    top: 2px; 
+  }
+  .all_dd{
+    /* display: none; */
+    left: 30px;
+    top: 65px;
+
+
+  }
 }
