@@ -14,18 +14,13 @@ const editBtn = document.querySelectorAll(".editpro_btn");
 const deleteBtn = document.querySelectorAll(".delete_btn");
 const editForm = document.querySelectorAll(".edit_form");
 
-
-
 if (editBtn) {
    
   for(let i = 0; i< editBtn.length; i++){
     editBtn[i].addEventListener("click", function () {
 
-      for(let j = 0; j<editForm.length; j++){
-
         editForm[i].classList.toggle("invisible");
-        editForm[i].classList.toggle("visible");
-      }
+      
     });
   }
 
@@ -43,7 +38,6 @@ if (deleteBtn) {
     }
 }
 //
-
 
 
 // add product

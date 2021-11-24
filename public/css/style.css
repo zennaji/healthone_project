@@ -1121,10 +1121,6 @@ select{
 .invisible{
   display: none;
 }
-.visible{
-  display: block;
-
-}
 
 /*  after make an account  */
 .after_make_acc{
