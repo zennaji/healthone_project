@@ -73,17 +73,7 @@ if (!isset($_SESSION["email"])) {
         getDashboard() .
         '</li>
 
-            </ul>
-            <ul class="navbar-nav ms-auto">
-                
-                <li class="nav-item">
-
-
-                
-				
-                </li>
-              
-            </ul>
+            
          
         </div>
 

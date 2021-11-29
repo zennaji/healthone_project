@@ -1,3 +1,4 @@
+// add reviews 
 const addBtn = document.querySelector(".add_rev_btn");
 const revSection = document.querySelector(".reviews_form");
 
@@ -8,6 +9,18 @@ if (addBtn) {
 
   });
 }
+// see reviews 
+const seeBtn = document.querySelector(".see_rev_btn");
+const allrevSection = document.querySelector(".products-review");
+
+if (seeBtn) {
+  seeBtn.addEventListener("click", function () {
+    allrevSection.classList.toggle("invisible");
+
+  });
+}
+
+
 //dashboard page script         
 // Producten tonen als je op product clickt
 const editBtn = document.querySelectorAll(".editpro_btn");
@@ -22,11 +35,9 @@ if (editBtn) {
         editForm[i].classList.toggle("invisible");
       
     });
-  }
-
-
-  
+  }  
 }
+
 // Delete button 
 if (deleteBtn) {
     for(let i = 0; i< editBtn.length; i++){
