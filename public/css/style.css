@@ -1292,7 +1292,7 @@ color: white;
   background-color: #ffffff;
   color: #dc4e68;
   width: 240px;
-  height: auto;
+  height: 280px;
   margin: 0 auto;
   border-radius: 2px;
   border: 1px solid #dc4e68;
@@ -1337,10 +1337,12 @@ color: white;
   margin-left: 10px;
   margin-right: 5px;
 
+
 }
 
 option{
-  background-color: rgba(89, 0, 0, 0.829);
+  background-color: #fc3e6a0c;
+  border: 1px solid #FC3E6B;
 }
 .product-reviews-tit{
   text-align: center;
@@ -1572,3 +1574,15 @@ display: block;
 
   }
 }
+
+
+
+/* rating stars style */
+.star-cb-group {
+  
+  direction: rtl;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
