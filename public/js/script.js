@@ -16,6 +16,7 @@ const allrevSection = document.querySelector(".products-review");
 if (seeBtn) {
   seeBtn.addEventListener("click", function () {
     allrevSection.classList.toggle("invisible");
+    
 
   });
 }
