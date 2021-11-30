@@ -4,8 +4,6 @@ include "Database.php";
 
 
 function getProducts(int $categoryId){
-
-    
     global $pdo;
     $query = $pdo->prepare("SELECT * FROM product WHERE cat_id = :id");
     $query->bindParam("id", $categoryId);
