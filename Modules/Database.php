@@ -16,7 +16,7 @@ $options = [
 ];
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
+    $pdo = new PDO($dsn,$user,$pass,$options);
     include_once ('../Classes/Category.php');
     include_once ('../Classes/Product.php');
     include_once ('../Classes/Review.php');

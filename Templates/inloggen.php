@@ -51,7 +51,7 @@ include_once('defaults/head.php');
                         $_SESSION["myrole"] = $user->role;
 
                         if($_SESSION["myrole"] == 'admin'){
-                            header("location:/dashboard");
+                            header("location:/admin/dashboard");
                         }else{
 
                             header("location:/home");

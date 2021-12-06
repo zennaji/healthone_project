@@ -1529,9 +1529,7 @@ display: block;
     grid-template-rows: auto;
 
   }
-  .grid-item{
-    
-  }
+
 
   .grid-item:nth-of-type(1){
     order: 2;
@@ -1575,14 +1573,33 @@ display: block;
   }
 }
 
-
-
-/* rating stars style */
-.star-cb-group {
-  
-  direction: rtl;
+/* Start css 404 page */
+.container-404{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.container-404 h1 {
+  margin: 20px;
+}
+.tof-404{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.tof-404 img:first-child{
+  width: 120%;
+}
+.txt-404{
+margin: 30px;
+text-align: center;
+}
+.container-404 button{
+  margin: 19px;
 }
 
-
-
-/*# sourceMappingURL=style.css.map */

@@ -2,17 +2,17 @@
 function getDashboard()
 {
     if ($_SESSION["myrole"] == 'admin') {
-        $item = '<a class="nav-link" href="/dashboard">DASHBOARD</a>';
+        $item = '<a class="nav-link" href="/admin/dashboard">DASHBOARD</a>';
     } else {
         $item = '<a class="nav-link" href="/contact">CONTACT</a>';
     }
     return $item;
 }
+?>
 
+<?php if (!isset($_SESSION["email"])):   ?> 
 
-if (!isset($_SESSION["email"])) {
-
-    echo ' <nav class="navbar navbar-dark navbar-expand-lg " >
+     <nav class="navbar navbar-dark navbar-expand-lg " >
 
     <div class="container-fluid">
         <a class="navbar-brand" href="/home">
@@ -47,9 +47,10 @@ if (!isset($_SESSION["email"])) {
          
         </div>
     </div>
-</nav>';
-} else {
-    echo ' <nav class="navbar  navbar-dark  navbar-expand-lg " >
+</nav>
+<?php else:  ?>
+
+     <nav class="navbar  navbar-dark  navbar-expand-lg " >
     <div class="container-fluid navbar-con">
         <a class="navbar-brand logo" href="/home">
             <img src="/img/logo.png" width="70%" class="logo-img" >
@@ -69,9 +70,9 @@ if (!isset($_SESSION["email"])) {
                 </li> 
                  
                 
-                <li class="nav-item nav-link-mob">' .
-        getDashboard() .
-        '</li>
+                <li class="nav-item nav-link-mob">
+        <?php echo getDashboard()  ?>
+        </li>
 
             
          
@@ -82,12 +83,12 @@ if (!isset($_SESSION["email"])) {
     </div>
 
 
-    <img class="pict" src="./public/img/userProfile.png" alt="profile_img">
+    <img class="pict" src="https://picsum.photos/200/" style="border-radius: 50%;" alt="profile_img">
     <div class="all_dd">
         <div class="pers_info">
-            <img class="" src="https://i.imgur.com/2QKIaJ5.png" width="85px" alt="profile_img">
-            <h4>' . $_SESSION["name"] . '</h4>
-            <P>' . $_SESSION["email"] . '</P>
+            <img class="" src="https://picsum.photos/200/" width="85px" style="border-radius: 50%;" alt="profile_img">
+            <h4> <?php echo  $_SESSION["name"];  ?></h4>
+            <P><?php echo $_SESSION["email"] ; ?></P>
         </div>
         <div class="dd_menu">
             <div class="dd_left">
@@ -109,5 +110,5 @@ if (!isset($_SESSION["email"])) {
     </div>
 
 
-</nav>';
-}
+</nav>
+<?php endif;  ?>

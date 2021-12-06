@@ -1,5 +1,7 @@
 <?php
-include_once('defaults/head.php');
+// include_once('defaults/head.php');
+include_once (TEMPLATE_ROOT . "/defaults/head.php");
+
 
 ?>
 
@@ -8,7 +10,9 @@ include_once('defaults/head.php');
 
 
     <?php
-    include_once('defaults/menu.php');
+    // include_once('defaults/menu.php')
+    include_once (TEMPLATE_ROOT . "/defaults/menu.php");
+;
     ?>
     <div class="dashboard_container">
         <div class="control_menu">
@@ -39,7 +43,7 @@ include_once('defaults/head.php');
         <!-- 2de side -->
         <div class="control_section">
             <h2>Producten</h2>
-            <div class="control_screen">
+             <div class="control_screen">
 
                 <?php
                 foreach ($prod as $data) {
@@ -76,7 +80,7 @@ include_once('defaults/head.php');
             <button class="add_product_btn">Voeg een apparaat toe <i class="far fa-plus-square"></i></button>
             <div class="add_pro_section invisible">
                 <div class="edit_form ">
-                    <form action="" method="Post">
+                    <form action="/admin/dashboard" method="Post">
                         <label for="title">TITLE:</label><br>
                         <input type="text" id="title" name="name" value=""><br>
                         <label for="category">CATEGORY:</label><br>
@@ -100,6 +104,8 @@ include_once('defaults/head.php');
         </div>
     </div>
     <?php
-    include_once('defaults/footer.php');
+        include_once (TEMPLATE_ROOT . "/defaults/footer.php");
+
+    // include_once('defaults/footer.php');
     ?>
 </div>
