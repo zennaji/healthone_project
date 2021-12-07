@@ -59,3 +59,14 @@ function addProduct($name,$category,$img,$description){
 
     return $request;
 }
+function deleteProduct($prodName){
+    global $pdo;
+    
+    $q = "DELETE FROM product WHERE name = :name";
+    $query = $pdo->prepare($q);
+    $query->bindParam(':name', $prodName);
+    $query->execute();
+    $request = $query;
+
+    return $request;
+}

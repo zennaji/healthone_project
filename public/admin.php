@@ -21,6 +21,12 @@ if($_SESSION["myrole"] == 'admin' ) {
         
                         updateProduct($prodName,$prodImg,$prodDescription,$id);
         
+                    }elseif(isset($_POST['delete'])){
+                        $id =  filter_input(INPUT_POST, 'prodId');
+                        $prodName = filter_input(INPUT_POST, 'prodName');
+                        $prodImg = filter_input(INPUT_POST, 'prodImg');
+                        $prodDescription = filter_input(INPUT_POST, 'prodDescription');
+                        deleteProduct($prodName);
                     }
     
                     
@@ -31,13 +37,15 @@ if($_SESSION["myrole"] == 'admin' ) {
                                 // $target = "img/".basename($_FILES['img']['name']);
                                 // $img = $_FILES['img']['name'];
                                 $description = filter_input(INPUT_POST, 'description');
-                                
                                 addProduct($name,$category,$img,$description);
                              
                 
                     }
+
+
+                   
                 break;
-           
+          
         }
 
     }

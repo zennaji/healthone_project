@@ -1156,6 +1156,10 @@ select{
   display: flex;
   height:auto;
 }
+.dashboard_container textarea{
+  background-color: #00000025;
+  color: #fff;
+}
 .control_menu{
   background-color: #dc4e68;
   width: 400px;

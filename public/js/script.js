@@ -28,6 +28,7 @@ const editBtn = document.querySelectorAll(".editpro_btn");
 const deleteBtn = document.querySelectorAll(".delete_btn");
 const editForm = document.querySelectorAll(".edit_form");
 
+
 if (editBtn) {
    
   for(let i = 0; i< editBtn.length; i++){
@@ -38,17 +39,16 @@ if (editBtn) {
     });
   }  
 }
-
-// Delete button 
-if (deleteBtn) {
-    for(let i = 0; i< editBtn.length; i++){
-      deleteBtn[i].addEventListener("click", function () {
+ // Delete button 
+// if (deleteBtn) {
+//     for(let i = 0; i< editBtn.length; i++){
+//       deleteBtn[i].addEventListener("click", function () {
   
-        alert("Deze product word verwijderd !")
+//         alert("Deze product word verwijderd !")
 
-      });
-    }
-}
+//       });
+//     }
+// }
 //
 
 
@@ -97,6 +97,10 @@ const all_dd = document.querySelector(".all_dd");
 pict.addEventListener("click", function(){
   all_dd.classList.toggle("active");
 	})
+
+  // dashboard menu script
+  
+
 
 
  
