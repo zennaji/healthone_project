@@ -59,10 +59,12 @@
                     
                     echo "<div class='flex'>  <span class='val'>" . $data->title .  " </span> </div> <br/> ";
 
-                    echo "<div class='flex'>  <span class='stars val'> ".$data->stars." </span> </div> <br/> ";
-
+                    
                     echo "<div class='m-l'> <span class='description val'>" . $data->description . "<span> </div> <br/> ";
                     
+                    echo "<div class='flex'>  <span class='stars val'> ".$data->stars." </span> </div> <br/> ";
+
+                    echo "<div class='flex'>  <span class='stars val'> ".$data->date." </span> </div> <br/> ";
 
                     echo "</div>";
                 }

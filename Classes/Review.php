@@ -7,6 +7,7 @@ class Review
     public $title;
     public $description;
     public $stars;
+    public $date;
     public $user_id;
     public $product_id;
 

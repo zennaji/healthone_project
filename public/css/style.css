@@ -1284,7 +1284,7 @@ color: white;
 
   padding: 5px 10px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   margin-top: 50px;
@@ -1305,7 +1305,10 @@ color: white;
   margin-bottom: 20px;
   overflow: auto;
   padding-right: 15px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   
 }
 .product-review div{
   font-size: 18px;
@@ -1327,13 +1330,12 @@ color: white;
 }
 .product-review .val{
   width: 100%;
-  text-align: center;
   margin: 0 auto;
   margin-left: 10px;
   color: #000000;
 }
 .m-l{
-  margin-left: 10px;
+ 
   width: 100%;
   height: auto;
 }

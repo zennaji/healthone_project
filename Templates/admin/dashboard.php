@@ -7,7 +7,7 @@ include_once(TEMPLATE_ROOT . "/defaults/head.php");
     <div class="row no-gutters">
         <?php
         // include_once('defaults/menu.php')
-        include_once(TEMPLATE_ROOT . "/defaults/menu.php");;
+        include_once(TEMPLATE_ROOT . "/defaults/menu.php");
         ?>
         <div class="dashboard_container">
             <div class="control_menu">
