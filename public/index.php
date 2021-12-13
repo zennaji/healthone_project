@@ -9,6 +9,7 @@ define("DOC_ROOT", realpath(dirname(__DIR__)));
 define("TEMPLATE_ROOT", realpath(DOC_ROOT . "/Templates"));
 
 session_start();
+
 $request = $_SERVER['REQUEST_URI'];
 $params = explode("/", $request);
 $title = "HealthOne";
@@ -41,36 +42,37 @@ switch ($params[1]) {
                 ];
                 if (isset($_POST['submit'])) {
 
-                    $name = strip_tags(filter_input(INPUT_POST, 'name'));   // in plaats van dit : $name = strip_tags($_POST['name']);
-                    if (empty($name) || ctype_space($name)) {
-                        $errors['nameError'] = 'Voer je naam in!';
-                    }
-
-                    $description = strip_tags(filter_input(INPUT_POST, 'description', FILTER_SANITIZE_SPECIAL_CHARS));
-                    if (empty($description) || ctype_space($description)) {
-                        $errors['descriptionError'] = 'Voer je view in!';
-                    }
-
-                    $stars = filter_input(INPUT_POST, 'stars', FILTER_VALIDATE_INT);
-
-                    if (isset($_POST['user_id'])) {
-                        $userId = strip_tags($_POST['user_id']);
-                        if (empty($userId) || ctype_space($description)) {
-                            $errors['descriptionError'] = 'Je moet ingelogd zijn voor een review';
+                    // $name = strip_tags(filter_input(INPUT_POST, 'name'));   // in plaats van dit : $name = strip_tags($_POST['name']);
+                    // if (empty($name) || ctype_space($name)) {
+                    //     $errors['nameError'] = 'Voer je naam in!';
+                    // }
+                    if (isset($_SESSION['id'])) {
+                        $description = strip_tags(filter_input(INPUT_POST, 'description', FILTER_SANITIZE_SPECIAL_CHARS));
+                        if (empty($description) || ctype_space($description)) {
+                            $errors['descriptionError'] = 'Voer je view in!';
                         }
-                    }
+
+                        $stars = filter_input(INPUT_POST, 'stars', FILTER_VALIDATE_INT);
+
+                        if (isset($_POST['user_id'])) {
+                            $userId = strip_tags($_POST['user_id']);
+                            if (empty($userId) || ctype_space($description)) {
+                                $errors['descriptionError'] = 'Je moet ingelogd zijn voor een review';
+                            }
+                        }
 
 
-                    if (isset($_POST['product_id'])) {
-                        $productId = strip_tags($_POST['product_id']);
-                    }
+                        if (isset($_POST['product_id'])) {
+                            $productId = strip_tags($_POST['product_id']);
+                        }
 
-                    if (!array_filter($errors)) {
-                        //session_start();
-                        saveReview($name, $description, $stars, $userId, $productId);
-                    } else {
+                        if (!array_filter($errors)) {
+                            //session_start();
+                            saveReview($_SESSION['id'], $description, $stars, $productId);
+                        } else {
 
-                        echo 'query error: ';
+                            echo 'query error: ';
+                        }
                     }
                 }
             } else {

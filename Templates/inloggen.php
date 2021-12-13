@@ -46,9 +46,12 @@ include_once('defaults/head.php');
                     $count = $login->rowCount();
                     if($count > 0){
                         $user = $login->fetch();
+                        $_SESSION["login"] = true;
                         $_SESSION["email"] = $user->email;
                         $_SESSION["name"] = $user->name;
                         $_SESSION["myrole"] = $user->role;
+                        $_SESSION["id"] = $user->id;
+                        
 
                         if($_SESSION["myrole"] == 'admin'){
                             header("location:/admin/dashboard");
