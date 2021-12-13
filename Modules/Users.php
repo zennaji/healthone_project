@@ -20,7 +20,7 @@ function saveUser(){
  function getLoginInfo(){
    global $pdo;
 
-  $q = "SELECT `name`, `email`, `role` FROM users WHERE email = :email AND password = :password";
+  $q = "SELECT `id`,`name`, `email`, `role` FROM users WHERE email = :email AND password = :password";
   $stmt = $pdo->prepare($q);
   $stmt->bindParam(':email', $email);
   $stmt->bindParam(':password', $password);
