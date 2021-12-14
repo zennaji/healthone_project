@@ -8,7 +8,7 @@
         <div class="reviews_form invisible">
             <form action="" method="POST">
                 <div class="rev_inputs">
-                    <label for="name">
+                    <label for="name" id="username">
                         <?= isset($_SESSION['name'])? $_SESSION['name'] : "Please login to write a reviews"?>
                     </label>
                     <!-- <input type="hidden" name="user_id" value="<?php //echo $user_id ?>">

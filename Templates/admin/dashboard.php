@@ -68,7 +68,7 @@ include_once(TEMPLATE_ROOT . "/defaults/head.php");
                 <button class="add_product_btn">Voeg een apparaat toe <i class="far fa-plus-square"></i></button>
                 <div class="add_pro_section invisible">
                     <div class="edit_form ">
-                        <form action="/admin/dashboard" method="Post">
+                        <form action="/admin/dashboard" method="Post" enctype="multipart/form-data">
                             <label for="title">TITLE:</label><br>
                             <input type="text" id="title" name="name" value=""><br>
                             <label for="category">CATEGORY:</label><br>

@@ -1607,3 +1607,11 @@ text-align: center;
   margin: 19px;
 }
 
+#username{
+  font-weight: bolder;
+  border: 1px solid #dc4e68;
+  padding: 5px;
+  color: #dc4e68;
+  background-color: #ffffff;
+
+}

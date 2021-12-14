@@ -37,7 +37,16 @@ if($_SESSION["myrole"] == 'admin' ) {
                                 // $target = "img/".basename($_FILES['img']['name']);
                                 // $img = $_FILES['img']['name'];
                                 $description = filter_input(INPUT_POST, 'description');
-                                addProduct($name,$category,$img,$description);
+                               
+                                if(isset($_FILES['img'])) {
+                                    // File upload
+                                    $path = uploadFile('img');
+                                    if($path !== false) {
+                                        addProduct($name,$category,$path,$description);
+                                    }
+                                }
+                                // Show error
+                                
                              
                 
                     }
