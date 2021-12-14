@@ -54,12 +54,12 @@ switch ($params[1]) {
 
                         $stars = filter_input(INPUT_POST, 'stars', FILTER_VALIDATE_INT);
 
-                        if (isset($_POST['user_id'])) {
-                            $userId = strip_tags($_POST['user_id']);
-                            if (empty($userId) || ctype_space($description)) {
-                                $errors['descriptionError'] = 'Je moet ingelogd zijn voor een review';
-                            }
-                        }
+                        // if (isset($_POST['user_id'])) {
+                        //     $userId = strip_tags($_POST['user_id']);
+                        //     if (empty($userId) || ctype_space($userId)) {
+                        //         $errors['descriptionError'] = 'Je moet ingelogd zijn voor een review';
+                        //     }
+                        // }
 
 
                         if (isset($_POST['product_id'])) {

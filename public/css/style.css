@@ -1609,3 +1609,19 @@ text-align: center;
   margin: 19px;
 }
 
+fieldset{
+  background-color: #bb8d96;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+ 
+}
+fieldset input[type="radio"] {
+  width: 15px;
+  height: 15px;
+ 
+   background-color: #14c514;
+   
+ 
+ }
+
