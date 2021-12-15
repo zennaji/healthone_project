@@ -1,24 +1,31 @@
-<div class="reviews_container">
+<?php
 
-    <button class="add_rev_btn">Add review</button>
-    <div class="reviews_form  ">
-        <form action="" method="POST">
-            <div class="rev_inputs">
-                <label for="name">
-                    <?= isset($_SESSION['name']) ? $_SESSION['name'] : "Please login to write a reviews" ?>
-                </label>
-               
-                <textarea type="text" name="description" placeholder="Wat is jouw view ?" rows="4" value="<?php echo $description ?>"></textarea>         
-                <select id="stars" name="stars" value="<?php echo $stars ?>">
-                    <option value="1"> ⭐</option>
-                    <option value="2"> ⭐⭐</option>
+
+?>
+    <div class="reviews_container">
+
+        <button class="add_rev_btn" >Add review</button>
+        <div class="reviews_form invisible">
+            <form action="" method="POST">
+                <div class="rev_inputs">
+                    <label for="name" id="username">
+                        <?= isset($_SESSION['name'])? $_SESSION['name'] : "Please login to write a reviews"?>
+                    </label>
+                    <!-- <input type="hidden" name="user_id" value="<?php //echo $user_id ?>">
+                    <input type="textn" name="name" placeholder="Full name" value="<?php //echo $name ?>"> -->
+                    <!-- <div class="form-text  text-muted error"> <?php //echo $errors['nameError']  ?></div> -->
+                    <textarea type="text" name="description" placeholder="Wat is jouw view ?"  rows="4" value="<?php echo $description ?>"></textarea>
+                    <!-- <div class="form-text  text-muted error"> <?php //echo $errors['descriptionError']  ?></div> -->
+                    <select id="stars" name="stars" value="<?php echo $stars ?>">
+                    <option value="1"> ⭐</option> 
+                    <option value="2"> ⭐⭐</option> 
                     <option value="3"> ⭐⭐⭐</option>
                     <option value="4"> ⭐⭐⭐⭐</option>
                     <option value="5"> ⭐⭐⭐⭐⭐</option>
                 </select>
                 <!-- rating stars -->
                
-                    <fieldset>
+                    <!-- <fieldset>
                        
                         <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
                         <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
@@ -27,7 +34,7 @@
                         <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
                          </span>
                     </fieldset>
-                
+                 -->
             </div>
 
 

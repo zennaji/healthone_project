@@ -17,9 +17,15 @@ if($_SESSION["myrole"] == 'admin' ) {
                         $prodName = filter_input(INPUT_POST, 'prodName');
                         $prodImg = filter_input(INPUT_POST, 'prodImg');
                         $prodDescription = filter_input(INPUT_POST, 'prodDescription');
-                        
+
+                        if(isset($_FILES['prodImg'])) {
+                            // File upload
+                            $path = uploadFile('prodImg');
+                            if($path !== false) {
+                                updateProduct($prodName,$path,$prodDescription,$id);
+                            }
+                        }
         
-                        updateProduct($prodName,$prodImg,$prodDescription,$id);
         
                     }elseif(isset($_POST['delete'])){
                         $id =  filter_input(INPUT_POST, 'prodId');
@@ -37,7 +43,16 @@ if($_SESSION["myrole"] == 'admin' ) {
                                 // $target = "img/".basename($_FILES['img']['name']);
                                 // $img = $_FILES['img']['name'];
                                 $description = filter_input(INPUT_POST, 'description');
-                                addProduct($name,$category,$img,$description);
+                               
+                                if(isset($_FILES['img'])) {
+                                    // File upload
+                                    $path = uploadFile('img');
+                                    if($path !== false) {
+                                        addProduct($name,$category,$path,$description);
+                                    }
+                                }
+                                // Show error
+                                
                              
                 
                     }

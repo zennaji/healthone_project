@@ -40,16 +40,16 @@ if (editBtn) {
   }  
 }
  // Delete button 
-// if (deleteBtn) {
-//     for(let i = 0; i< editBtn.length; i++){
-//       deleteBtn[i].addEventListener("click", function () {
-  
-//         alert("Deze product word verwijderd !")
+ const deleteButtons = document.querySelectorAll('.delete_btn');
+ for(const deleteButton of deleteButtons ){
+   deleteButton.addEventListener('click', (event) => {
+     const result = window.confirm("Wilt u dit zeker verwijderen ?");
+     if (result === false) {
+       event.preventDefault();
+     }
+   })
+ }
 
-//       });
-//     }
-// }
-//
 
 
 // add product
@@ -99,7 +99,6 @@ pict.addEventListener("click", function(){
 	})
 
   // dashboard menu script
-  
 
 
 
