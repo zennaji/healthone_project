@@ -55,7 +55,7 @@ include_once(TEMPLATE_ROOT . "/defaults/head.php");
                                     <input type='text' id='title' name='prodName' value='<?php echo $data->name; ?>'><br>
                                     <label for='prod_img'>PHOTO:</label><br>
                                     <input type='file' id='prod_img' name='prodImg' value='<?php 
-                                    $img = $data->picture;$p = explode("\\", $img);echo $p[4];
+                                    $img = $data->picture; $p = explode("\\", $img);echo $p[4];
                                     ?>'><br>
                                     <label for='prod_desc'>Description:</label><br>
                                     <textarea type='text' id='prod_desc' name='prodDescription' value=''><?php echo $data->description; ?></textarea><br>

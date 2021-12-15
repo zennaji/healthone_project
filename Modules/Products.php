@@ -25,7 +25,7 @@ function getProduct(int $productId)
 
     return $request;
 }
-function getProducts2()
+function    getProducts2()
 {
     global $pdo;
 
