@@ -2,7 +2,7 @@
 function getDashboard()
 {
     if ($_SESSION["myrole"] == 'admin') {
-        $item = '<a class="nav-link" href="/admin/dashboard">DASHBOARD</a>';
+        $item = '<a class="nav-link" href="/admin/products">DASHBOARD</a>';
     } else {
         $item = '<a class="nav-link" href="/contact">CONTACT</a>';
     }
