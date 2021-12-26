@@ -18,6 +18,9 @@ html {
 .nav-link {
   color: white;
 }
+.navbar-nav{
+  margin-left: auto;
+}
 
 .pull-right img-thumbnail {
   margin-top: -10px;
@@ -1218,6 +1221,12 @@ color: white;
   overflow-y: scroll;
   
 }
+.control_screenC{
+
+  height: auto;
+  
+}
+ 
 .product_in_control{
   display: flex;
   
@@ -1273,6 +1282,9 @@ color: white;
 .add_pro_section{
   height: 450px;
   margin: 20px;
+}
+.add_pro_sectionC{
+  height: auto;
 }
 
 

@@ -24,7 +24,7 @@ function getDashboard()
 
 
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="navbar-nav">  
+            <ul class="navbar-nav  ">  
                 <li class="nav-item">
                     <a class="nav-link " href="/home">HOME</a>
                 </li>

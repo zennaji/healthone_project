@@ -27,25 +27,13 @@ switch ($params[1]) {
             if (isset($_GET['product_id'])) {
                 $productId = $_GET['product_id'];
                 $product = getProduct($productId);
-
-                include_once "../Templates/product.php";
                 $titleSuffix = ' | ' . $product['name'];
-
-                // if (isset($_POST['name']) && isset($_POST['review'])) {
-                //     saveReview($_POST['name'], $_POST['review']);
-                //     $reviews = getReviews($productId);
-                // }
-                // include_once "../Templates/defaults/product_reviews.php";
                 $errors = [
                     'nameError' => '',
                     'descriptionError' => '',
                 ];
                 if (isset($_POST['submit'])) {
 
-                    // $name = strip_tags(filter_input(INPUT_POST, 'name'));   // in plaats van dit : $name = strip_tags($_POST['name']);
-                    // if (empty($name) || ctype_space($name)) {
-                    //     $errors['nameError'] = 'Voer je naam in!';
-                    // }
                     if (isset($_SESSION['id'])) {
                         $description = strip_tags(filter_input(INPUT_POST, 'description', FILTER_SANITIZE_SPECIAL_CHARS));
                         if (empty($description) || ctype_space($description)) {
@@ -53,15 +41,6 @@ switch ($params[1]) {
                         }
 
                         $stars = filter_input(INPUT_POST, 'stars', FILTER_VALIDATE_INT);
-
-                        // if (isset($_POST['user_id'])) {
-                        //     $userId = strip_tags($_POST['user_id']);
-                        //     if (empty($userId) || ctype_space($userId)) {
-                        //         $errors['descriptionError'] = 'Je moet ingelogd zijn voor een review';
-                        //     }
-                        // }
-
-
                         if (isset($_POST['product_id'])) {
                             $productId = strip_tags($_POST['product_id']);
                         }
@@ -75,11 +54,12 @@ switch ($params[1]) {
                         }
                     }
                 }
+                include_once "../Templates/product.php";
+
             } else {
                 include_once "../Templates/products.php";
             }
         } else {
-            // TODO Toon de categorieen
             $categories = getCategories();
             include_once "../Templates/categories.php";
         }

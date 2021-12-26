@@ -9,13 +9,6 @@
             <div class="row no-gutters">
 
             <?php
-            
-            // echo $_SERVER['REQUEST_URI'] . '<br>' ;
-            // $request = $_SERVER['REQUEST_URI'];
-            // $params = explode("/", $request);
-            // echo count($params);
-            // for($i = 0; $i<count($params);$i++)
-
 
             include_once ('defaults/menu.php');
             include_once ('defaults/pictures.php');
@@ -27,15 +20,8 @@
             include_once ('defaults/info.php');
             include_once ('defaults/socialm.php');
             include_once ('defaults/footer.php');
-            
 
             ?>
-
-            
-            
-            
-            
-            
         </div>
             </div> 
            
