@@ -11,8 +11,8 @@ include_once('defaults/head.php');
 
             <?php
             include_once('defaults/menu.php');
-
-            echo "
+            ?>
+            
             <h1 class='title_contact' id='contact'>CONTACT</h1>
             <div class='contatct_container'>
                 <div class='contact_description'>
@@ -28,8 +28,25 @@ include_once('defaults/head.php');
                         </div>
                     </div>
                 </div>
+                <!-- ipeningstijden -->
+                <div class="opening_time">
+                    <table>
+                        <tr>
+                            <th>Dagen</th>
+                            <th>Open om</th>
+                            <th>Sluit om</th>
+                        </tr>
+                        <?php foreach($opnTijd as $data):  ?>
+                        <tr>
+                            <td><?= $data->day ?></td>
+                            <td><?= $data->open_time	 ?></td>
+                            <td><?= $data->close_time	 ?></td>
+                        </tr>
+                        <?php endforeach  ?>
+                    </table>
+                </div>
             </div>
-            ";
+        <?php  
             include_once('defaults/info.php');
             include_once('defaults/socialm.php');
             include_once('defaults/footer.php');

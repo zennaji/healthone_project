@@ -3,6 +3,7 @@ require '../Modules/Categories.php';
 require '../Modules/Products.php';
 require '../Modules/Reviews.php';
 require '../Modules/Users.php';
+require '../Modules/Time.php';
 require '../Modules/Database.php';
 
 define("DOC_ROOT", realpath(dirname(__DIR__)));
@@ -65,7 +66,8 @@ switch ($params[1]) {
         }
         break;
     case 'contact':
-        $titleSuffix = ' | Contant';
+        $titleSuffix = ' | Contact';
+        $opnTijd = getOpenHours();
         include_once "../Templates/contact.php";
         break;
     case 'register':

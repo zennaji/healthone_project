@@ -1645,3 +1645,11 @@ fieldset input[type="radio"] {
   background-color: #ffffff;
 
 }
+/* openingtijden */
+.opening_time table, tr,th,td{
+  border: 1px solid white;
+  color: #d4aeb5;
+}
+.opening_time table{
+  width: 100%;
+}
