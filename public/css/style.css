@@ -1649,7 +1649,12 @@ fieldset input[type="radio"] {
 .opening_time table, tr,th,td{
   border: 1px solid white;
   color: #d4aeb5;
+  /* padding: 20px; */
 }
 .opening_time table{
   width: 100%;
+ 
+}
+.opening_time th, td{
+   padding: 10px;
 }

@@ -30,6 +30,7 @@ include_once('defaults/head.php');
                 </div>
                 <!-- ipeningstijden -->
                 <div class="opening_time">
+                    <h4>Openingstijden </h4><br>
                     <table>
                         <tr>
                             <th>Dagen</th>
