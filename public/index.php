@@ -56,7 +56,6 @@ switch ($params[1]) {
                     }
                 }
                 include_once "../Templates/product.php";
-
             } else {
                 include_once "../Templates/products.php";
             }
@@ -100,6 +99,10 @@ switch ($params[1]) {
     case 'admin':
         $titleSuffix = ' | admin';
         include_once "admin.php";
+        break;
+    case 'user':
+        $titleSuffix = ' | user';
+        include_once "user.php";
         break;
     case '404':
         $titleSuffix = ' | 404 Error';

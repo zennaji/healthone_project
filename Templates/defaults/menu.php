@@ -83,7 +83,7 @@ function getDashboard()
     </div>
 
 
-    <img class="pict" src="https://picsum.photos/200/" style="border-radius: 50%;" alt="profile_img">
+    <img class="pict" src="/public/img/user/noprofil.jpg" style="border-radius: 50%;" alt="profile_img">
     <div class="all_dd">
         <div class="pers_info">
             <img class="" src="https://picsum.photos/200/" width="85px" style="border-radius: 50%;" alt="profile_img">
@@ -93,16 +93,16 @@ function getDashboard()
         <div class="dd_menu">
             <div class="dd_left">
                 <ul>
-                    <li><i class="far fa-star"></i></li>
                     <li><i class="fas fa-cog"></i></li>
+                    <li><i class="far fa-star"></i></li>
                     <li><i class="fas fa-sign-out-alt"></i></li>
                 </ul>
             </div>
             <div class="dd_right">
                 <ul>
                                 
+                    <li> <a href="/user/settings"> Settings</a </li>
                     <li>Favorites</li>
-                        <li>Settings</li>
                         <li><a href="/uitloggen"> Logout</a></li>
                     </ul>
                 </div>

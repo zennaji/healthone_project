@@ -85,3 +85,19 @@ const all_dd = document.querySelector(".all_dd");
 pict.addEventListener("click", function () {
   all_dd.classList.toggle("active");
 });
+
+// profile user js
+const icon = document.querySelectorAll(".profile_body i");
+const input = document.querySelectorAll(".inpt");
+
+
+for (let i = 0; i < icon.length; i++) {
+  icon[i].addEventListener("click", function () {
+    input[i].classList.toggle("invisible");
+  });
+}
+
+
+// icon.addEventListener("click", function () {
+//   input.classList.toggle("invisible");
+// });

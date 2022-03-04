@@ -85,10 +85,7 @@ include_once('defaults/head.php');
                         }else{
                             $errors['passwordError'] = 'De wachtwoord komt niet overeen !';
 
-                        }
-
-                        
-                        
+                        } 
                     }
                 }
             }

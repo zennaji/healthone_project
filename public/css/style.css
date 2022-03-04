@@ -5,6 +5,7 @@ body {
   font-family: "Oswald", sans-serif;
   width: 100%;
   background-color: black;
+  color: white;
 }
 html {
   background-color: rgba(0, 0, 0, 0.7);
@@ -18,7 +19,7 @@ html {
 .nav-link {
   color: white;
 }
-.navbar-nav{
+.navbar-nav {
   margin-left: auto;
 }
 
@@ -34,8 +35,6 @@ html {
 .banner-img {
   background-attachment: fixed;
 }
-
-
 
 .product-img {
   width: 100%;
@@ -948,21 +947,19 @@ footer {
   display: flex;
   flex-direction: row;
   /* justify-content: space-around;  */
-   /* align-items: center; */
+  /* align-items: center; */
   background-color: #ffffff;
   height: auto;
   padding-top: 20px;
   padding-left: 20px;
 
   justify-content: center;
-
 }
-  .product_text{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    
-  }  
+.product_text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 .product_container h3 {
   color: #fff;
   padding: 20px;
@@ -981,7 +978,6 @@ footer {
   padding: 0 30px 30px 30px;
   line-height: 2;
   color: #000000;
-
 }
 /* contact css */
 .contatct_container {
@@ -1029,7 +1025,7 @@ iframe {
   margin: 10px;
 }
 /* Register page css */
-.login_container{
+.login_container {
   background-color: #fc3e6a31;
   margin: 50px auto;
   width: 40%;
@@ -1039,11 +1035,11 @@ iframe {
   justify-content: center;
   align-items: center;
 }
-.login_container img{
+.login_container img {
   width: 200px;
   margin: 30px;
 }
-.login_inputs{
+.login_inputs {
   width: 100%;
   height: auto;
   display: flex;
@@ -1051,37 +1047,37 @@ iframe {
   justify-content: center;
   align-items: center;
 }
-.login_inputs input{
+.login_inputs input {
   width: 50%;
   height: 46px;
 
   margin: 5px;
 }
-.login_inputs button{
+.login_inputs button {
   height: 40px;
   width: 100px;
   margin: 20px;
-  background-color: #FC3E6B;
+  background-color: #fc3e6b;
   color: #fff;
   border: none;
   font-weight: 400;
   line-height: 1.5;
 }
-.login_choises a{
+.login_choises a {
   color: white;
   font-size: 15px;
   font-weight: 300;
 }
-.login_choises{
+.login_choises {
   margin: 20px;
 }
-.acc_text{
-  color: #FC3E6B;
+.acc_text {
+  color: #fc3e6b;
   width: 50%;
   font-size: 15px;
 }
 /* reviews section style */
-.reviews_container{
+.reviews_container {
   padding: 0 115px;
   height: auto;
   background-color: #ffffff;
@@ -1093,7 +1089,7 @@ iframe {
 
 .reviews_form {
   background-color: #fc3e6a0c;
-  width:100%;
+  width: 100%;
   border-radius: 2px;
   text-align: center;
   height: auto;
@@ -1101,21 +1097,19 @@ iframe {
   margin: 20px;
   align-self: center;
 }
-.reviews_form  input, textarea{
-  width:100%;
+.reviews_form input,
+textarea {
+  width: 100%;
   margin: 0 auto;
   height: 40px;
   border-radius: 1px;
   margin: 5px;
-  border: 1px solid #FC3E6B;
-
+  border: 1px solid #fc3e6b;
 }
-.reviews_form  textarea{
+.reviews_form textarea {
   height: 160px;
- 
-  
 }
-.rev_inputs{
+.rev_inputs {
   display: flex;
   padding: 30px;
   flex-direction: column;
@@ -1123,17 +1117,19 @@ iframe {
   align-items: center;
   height: auto;
 }
-.rev_btns{
+.rev_btns {
   width: 97%;
   margin: 10px auto;
   display: flex;
   justify-content: flex-end;
 }
-select{
+select {
   border: none;
 }
 
-.rev_btns button, .add_rev_btn, .see_rev_btn{
+.rev_btns button,
+.add_rev_btn,
+.see_rev_btn {
   margin: 5px;
   border: 1px solid #dc4e68;
 
@@ -1142,39 +1138,38 @@ select{
   height: 35px;
 }
 
-.invisible{
+.invisible {
   display: none;
 }
 
 /*  after make an account  */
-.after_make_acc{
+.after_make_acc {
   margin: 0px auto;
   width: 40%;
   height: 100px;
-
 }
 
 /* Start dashboard style */
-.dashboard_container{
+.dashboard_container {
   display: flex;
-  height:auto;
+  height: auto;
 }
-.dashboard_container textarea{
+.dashboard_container textarea {
   background-color: #00000025;
   color: #fff;
 }
-.control_menu{
+.control_menu {
   background-color: #dc4e68;
   width: 400px;
-  
 }
-.control_menu h2, .control_section h2{
+.control_menu h2,
+.control_section h2 {
   color: white;
   text-align: center;
   padding: 20px;
   background-color: black;
 }
-.admin_title{
+.admin_title {
   margin: 10px auto;
   background-color: rgba(0, 0, 0, 0.11);
   height: 120px;
@@ -1186,110 +1181,100 @@ select{
   align-items: center;
   color: #fff;
 }
-.dash_list ul{
+.dash_list ul {
   padding: 0;
-  
 }
-.dash_list li{
+.dash_list li {
   list-style: none;
   display: flex;
-  align-items: center; 
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.26);
   margin-bottom: 5px;
-  height: 50px; 
+  height: 50px;
   padding: 5px;
-  
-
 }
-.dash_list li:hover{
+.dash_list li:hover {
   background-color: rgba(68, 68, 68, 0.26);
 }
 .dash_list a {
-color: white;
+  color: white;
 }
 
-.control_section{
-   width: 75%;
-
+.control_section {
+  width: 75%;
 }
-.control_screen{
+.control_screen {
   background-color: #dc4e6841;
   width: 100%;
   height: 620px;
   margin: 20px;
   padding: 20px;
   overflow-y: scroll;
-  
 }
-.control_screenC{
-
+.control_screenC {
   height: auto;
-  
 }
- 
-.product_in_control{
+
+.product_in_control {
   display: flex;
-  
+
   margin-bottom: 20px;
   height: 140px;
   width: 400px;
-
 }
-.edit_remove_product{
+.edit_remove_product {
   padding: 40px 15px;
-
 }
 
-.edit_remove_product p{
+.edit_remove_product p {
   color: white;
 }
-.edit_remove_product i{
+.edit_remove_product i {
   cursor: pointer;
-  padding-left:10px ;
+  padding-left: 10px;
   color: white;
   font-size: 20px;
 }
-.edit_form{
+.edit_form {
   background-color: #d86b7f3d;
   color: white;
   padding: 10px;
 }
-.edit_form input,.edit_btn,  .addprod{
+.edit_form input,
+.edit_btn,
+.addprod {
   width: 100%;
   background-color: #00000025;
   border: 1px solid #dc4e68;
   color: white;
   margin-top: 5px;
 }
-.edit_form label{
-  margin-top:10px ;
+.edit_form label {
+  margin-top: 10px;
 }
-.edit_form textarea{
+.edit_form textarea {
   height: 20%;
 }
- 
+
 /* End dashboard style */
 
-
 /* product review style */
-.add_product_btn{
+.add_product_btn {
   background-color: #00000025;
   border: 1px solid #dc4e68;
   color: white;
   margin: 10px 20px;
   padding: 10px;
 }
-.add_pro_section{
+.add_pro_section {
   height: 450px;
   margin: 20px;
 }
-.add_pro_sectionC{
+.add_pro_sectionC {
   height: auto;
 }
 
-
-
-.products-review{
+.products-review {
   display: flex;
   background-color: #fc3e6a0c;
   border-radius: 2px;
@@ -1301,10 +1286,9 @@ color: white;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
-
 }
 
-.product-review{
+.product-review {
   background-color: #ffffff;
   color: #dc4e68;
   width: 240px;
@@ -1320,143 +1304,128 @@ color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-   
 }
-.product-review div{
+.product-review div {
   font-size: 18px;
   margin-bottom: -20px;
-  
 }
 
-.product-review .description{
+.product-review .description {
   padding: -0px 5px;
   border-radius: 5px;
   font-size: 16px;
   font-family: "Times New Roman", Times, serif;
-  
 }
-.flex{
+.flex {
   width: 100%;
   display: flex;
-  
 }
-.product-review .val{
+.product-review .val {
   width: 100%;
   margin: 0 auto;
   margin-left: 10px;
   color: #000000;
 }
-.m-l{
- 
+.m-l {
   width: 100%;
   height: auto;
 }
 .product-review {
   margin-left: 10px;
   margin-right: 5px;
-
-
 }
 
-option{
+option {
   background-color: #fc3e6a0c;
-  border: 1px solid #FC3E6B;
+  border: 1px solid #fc3e6b;
 }
-.product-reviews-tit{
+.product-reviews-tit {
   text-align: center;
   width: 100%;
   color: rgb(0, 0, 0);
   margin: 30px 10px;
 }
 /* profile pic */
-.pict{
+.pict {
   width: 40px;
   cursor: pointer;
   margin-right: 30px;
-  
 }
-.all_dd{
+.all_dd {
   background-color: #fff;
   position: absolute;
   right: 15px;
   top: 85px;
   border-radius: 15px;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
   width: 300px;
   display: none;
-  z-index:3;
+  z-index: 3;
 }
-.pers_info{
+.pers_info {
   text-align: center;
   padding: 20px;
+  color: #ad344a;
 }
-.pers_info img{
+.pers_info img {
   margin-bottom: 20px;
 }
 
 .dd_menu {
-  
   display: flex;
-  
 }
 
-.dd_menu .dd_left{
-background: #dc4e68;
-border-bottom-left-radius: 15px;
-padding: 15px 17px;
- }
-
-.dd_menu .dd_left li{
-color: #fff;
-
+.dd_menu .dd_left {
+  background: #dc4e68;
+  border-bottom-left-radius: 15px;
+  padding: 15px 17px;
 }
 
-.dd_menu li a{
+.dd_menu .dd_left li {
+  color: #fff;
+}
+
+.dd_menu li a {
   color: #dc4e68;
-  
-  }
-
-.dd_menu .dd_right li{
- color: #dc4e68;
- padding-left: 60px;
-  
-  }
-
-.dd_menu .dd_right{
-padding: 15px 20px;
 }
 
-.dd_menu li{
+.dd_menu .dd_right li {
+  color: #dc4e68;
+  padding-left: 60px;
+}
+
+.dd_menu .dd_right {
+  padding: 15px 20px;
+}
+
+.dd_menu li {
   list-style: none;
   cursor: pointer;
- 
 
-margin-bottom: 10px;
-color: #868686;
+  margin-bottom: 10px;
+  color: #868686;
 }
-.dd_menu ul{
-padding: 0;
+.dd_menu ul {
+  padding: 0;
 }
 
-.dd_menu:before{
-content: "";
-position: absolute;
-top: -20px;
-right: 30px;
-border: 10px solid;
-border-color: transparent transparent #fff transparent;
+.dd_menu:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  border: 10px solid;
+  border-color: transparent transparent #fff transparent;
 }
-.active{
-display: block;
+.active {
+  display: block;
 }
 .product-name-container {
   background-color: #fff;
   padding-top: 120px;
-  
-  
 }
 
-.product-name-container h3{
+.product-name-container h3 {
   color: #fff;
   padding: 0px;
   font-size: 40px;
@@ -1464,10 +1433,8 @@ display: block;
   margin-bottom: -2px;
   width: 50vw;
   padding-left: 7vw;
-
-
 }
-.product_container .prod_pic{
+.product_container .prod_pic {
   width: 40vw;
 }
 
@@ -1478,121 +1445,101 @@ display: block;
 @media only screen and (max-width: 991px) {
   .pict {
     position: absolute;
-    top: 20px; 
-    left: 20px;  
+    top: 20px;
+    left: 20px;
     width: 60px;
   }
-  #myNavbar{
+  #myNavbar {
     margin-top: 10px;
     margin-left: 3vw;
   }
-  .logo{
+  .logo {
     /* background-color: red; */
-    width: 180px; 
+    width: 180px;
     margin: 0 auto;
     position: relative;
     left: 7vw;
   }
-  .logo-img{
+  .logo-img {
     width: 100%;
   }
-  .nav-link-mob{
+  .nav-link-mob {
     text-align: center;
     font-size: 18px;
   }
-  .all_dd{
+  .all_dd {
     /* display: none; */
     left: 20px;
-
-
   }
-  .dd_menu:before{
+  .dd_menu:before {
     right: 100%;
     left: 40px;
   }
 
-  
-  .product_container p{
+  .product_container p {
     width: 100%;
     text-align: center;
   }
-  .product-name-container h3{
+  .product-name-container h3 {
     width: 100%;
     text-align: center;
     padding-left: 0;
     padding: 10px;
   }
-  .product_text{
+  .product_text {
     width: 90%;
     text-align: center;
     margin: 0 auto;
-
-    
   }
-  .product_container .prod_pic{
+  .product_container .prod_pic {
     width: 80vw;
     margin-top: -50px;
-    
   }
-  .product_container{
-    
+  .product_container {
     display: block;
     text-align: center;
-    
   }
-  .grid{
+  .grid {
     display: grid;
-    
+
     grid-template-columns: auto;
     grid-template-rows: auto;
-
   }
 
-
-  .grid-item:nth-of-type(1){
+  .grid-item:nth-of-type(1) {
     order: 2;
   }
- 
-
- 
-
-
-
-
 }
 @media only screen and (max-width: 490px) {
-  .logo{
-    width: 200px; 
+  .logo {
+    width: 200px;
     margin: 0 auto;
     position: relative;
     left: 7vw;
     display: flex;
   }
-  .logo-img{
+  .logo-img {
     width: 70%;
     margin: 0 auto;
     text-align: center;
     /* justify-content: center; */
-    
   }
-  .navbar-con{
+  .navbar-con {
     padding: 0;
     margin-top: -10px;
   }
   .pict {
-    top: 2px; 
+    top: 2px;
   }
-  .all_dd{
+  .all_dd {
     /* display: none; */
     left: 30px;
     top: 65px;
-
-
   }
 }
 
 /* Start css 404 page */
-.container-404{
+.container-404 {
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -1603,58 +1550,126 @@ display: block;
 .container-404 h1 {
   margin: 20px;
 }
-.tof-404{
+.tof-404 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
 }
-.tof-404 img:first-child{
+.tof-404 img:first-child {
   width: 120%;
 }
-.txt-404{
-margin: 30px;
-text-align: center;
+.txt-404 {
+  margin: 30px;
+  text-align: center;
 }
-.container-404 button{
+.container-404 button {
   margin: 19px;
 }
 
-fieldset{
+fieldset {
   background-color: #bb8d96;
   display: flex;
   flex-direction: row;
   width: 400px;
- 
 }
 fieldset input[type="radio"] {
   width: 15px;
   height: 15px;
- 
-   background-color: #14c514;
-   
- 
- }
 
-#username{
+  background-color: #14c514;
+}
+
+#username {
   font-weight: bolder;
   border: 1px solid #dc4e68;
   padding: 5px;
   color: #dc4e68;
   background-color: #ffffff;
-
 }
 /* openingtijden */
-.opening_time table, tr,th,td{
+.opening_time table,
+tr,
+th,
+td {
   border: 1px solid white;
   color: #d4aeb5;
   /* padding: 20px; */
 }
-.opening_time table{
+.opening_time table {
   width: 100%;
- 
 }
-.opening_time th, td{
-   padding: 10px;
+.opening_time th,
+td {
+  padding: 10px;
+}
+
+/* profile page css */
+.setting_title {
+  padding-left: 20px;
+}
+.profile_details {
+  background-color: #dc4e685d;
+  margin: 20px;
+  height: 730px;
+}
+.profile_header {
+  background-color: #dc4e68;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.profile_header img {
+  border-radius: 50%;
+  border: 8px solid #dcdcdc;
+}
+.profile_body {
+  padding: 40px 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+.name_info,
+.email_info,
+.pass_info {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.profile_name,
+.profile_email,
+.profile_pass {
+  margin-bottom: 25px;
+}
+.profile_body input {
+  width: 100%;
+  border: none;
+  background: #00000034;
+  height: 45px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.profile_body p {
+  opacity: 0.2;
+}
+.profile_body button {
+  height: 35px;
+  border: none;
+  color: #ffffff;
+  background-color: #dc4e68;
+}
+.profile_body i {
+  cursor: pointer;
+}
+
+/* //settings page css */
+.settings_container {
+  height: 767px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+.settings_container hr {
+  background-color: black;
 }

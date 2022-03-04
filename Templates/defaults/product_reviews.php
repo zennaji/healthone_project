@@ -2,30 +2,34 @@
 
 
 ?>
-    <div class="reviews_container">
+<div class="reviews_container">
 
-        <button class="add_rev_btn" >Add review</button>
-        <div class="reviews_form invisible">
-            <form action="" method="POST">
-                <div class="rev_inputs">
-                    <label for="name" id="username">
-                        <?= isset($_SESSION['name'])? $_SESSION['name'] : "Please login to write a reviews"?>
-                    </label>
-                    <!-- <input type="hidden" name="user_id" value="<?php //echo $user_id ?>">
-                    <input type="textn" name="name" placeholder="Full name" value="<?php //echo $name ?>"> -->
-                    <!-- <div class="form-text  text-muted error"> <?php //echo $errors['nameError']  ?></div> -->
-                    <textarea type="text" name="description" placeholder="Wat is jouw view ?"  rows="4" value="<?php echo $description ?>"></textarea>
-                    <!-- <div class="form-text  text-muted error"> <?php //echo $errors['descriptionError']  ?></div> -->
-                    <select id="stars" name="stars" value="<?php echo $stars ?>">
-                    <option value="1"> ⭐</option> 
-                    <option value="2"> ⭐⭐</option> 
+    <button class="add_rev_btn">Add review</button>
+    <div class="reviews_form invisible">
+        <form action="" method="POST">
+            <div class="rev_inputs">
+                <label for="name" id="username">
+                    <?= isset($_SESSION['name']) ? $_SESSION['name'] : "Please login to write a reviews" ?>
+                </label>
+                <!-- <input type="hidden" name="user_id" value="<?php //echo $user_id 
+                                                                ?>">
+                    <input type="textn" name="name" placeholder="Full name" value="<?php //echo $name 
+                                                                                    ?>"> -->
+                <!-- <div class="form-text  text-muted error"> <?php //echo $errors['nameError']  
+                                                                ?></div> -->
+                <textarea type="text" name="description" placeholder="Wat is jouw view ?" rows="4" value="<?php echo $description ?>"></textarea>
+                <!-- <div class="form-text  text-muted error"> <?php //echo $errors['descriptionError']  
+                                                                ?></div> -->
+                <select id="stars" name="stars" value="<?php echo $stars ?>">
+                    <option value="1"> ⭐</option>
+                    <option value="2"> ⭐⭐</option>
                     <option value="3"> ⭐⭐⭐</option>
                     <option value="4"> ⭐⭐⭐⭐</option>
                     <option value="5"> ⭐⭐⭐⭐⭐</option>
                 </select>
                 <!-- rating stars -->
-               
-                    <!-- <fieldset>
+
+                <!-- <fieldset>
                        
                         <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
                         <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
@@ -44,21 +48,21 @@
             </div>
         </form>
     </div>
-    <button class="see_rev_btn">See rewiews</button>
+    <button class="see_rev_btn">See reviews</button>
 
     <div class="products-review invisible">
-        <h2 class="product-reviews-tit">REWIEWS</h2>
+        <h2 class="product-reviews-tit">REVIEWS</h2>
 
         <?php
         $rev = getReviews($productId);
-        foreach ($rev as $data): ?>
+        foreach ($rev as $data) : ?>
             <div class='product-review'>
                 <div class='flex'> <span class='val'> <?= $data->title ?></span> </div> <br>
                 <div class='m-l'> <span class='description val'><?= $data->description ?> <span> </div> <br>
                 <div class='flex'> <span class='stars val'><?= $data->stars ?> </span> </div> <br>
                 <div div class='flex'> <span class='stars val'><?= $data->date ?> </span> </div> <br>
             </div>
-            <?php endforeach; ?>
+        <?php endforeach; ?>
 
     </div>
 </div>
