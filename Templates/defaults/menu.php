@@ -83,7 +83,7 @@ function getDashboard()
     </div>
 
 
-    <img class="pict" src="/public/img/user/noprofil.jpg" style="border-radius: 50%;" alt="profile_img">
+    <img class="pict" src="https://picsum.photos/200/" style="border-radius: 50%;" alt="profile_img">
     <div class="all_dd">
         <div class="pers_info">
             <img class="" src="https://picsum.photos/200/" width="85px" style="border-radius: 50%;" alt="profile_img">

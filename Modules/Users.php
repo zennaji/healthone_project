@@ -16,17 +16,17 @@ function getUser()
   return $result;
 }
 // login information
-function getLoginInfo()
+function getLoginInfo($email)
 {
   global $pdo;
 
-  $q = "SELECT `id`,`name`, `email`, `role` FROM users WHERE email = :email AND password = :password";
+  $q = "SELECT * FROM users WHERE email = :email";
   $stmt = $pdo->prepare($q);
   $stmt->bindParam(':email', $email);
-  $stmt->bindParam(':password', $password);
+  // $stmt->bindParam(':password', $password);
 
-  $email = $_POST['email'];
-  $password = $_POST['password'];
+  // $email = $_POST['email'];
+  // $password = $_POST['password'];
 
   $stmt->setFetchMode(PDO::FETCH_CLASS, 'User');
   $stmt->execute();

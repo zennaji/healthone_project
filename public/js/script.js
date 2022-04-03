@@ -89,6 +89,7 @@ pict.addEventListener("click", function () {
 // profile user js
 const icon = document.querySelectorAll(".profile_body i");
 const input = document.querySelectorAll(".inpt");
+const error = document.querySelectorAll(".error");
 
 
 for (let i = 0; i < icon.length; i++) {
