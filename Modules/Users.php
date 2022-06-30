@@ -25,8 +25,6 @@ function getLoginInfo($email)
   $stmt->bindParam(':email', $email);
   // $stmt->bindParam(':password', $password);
 
-  // $email = $_POST['email'];
-  // $password = $_POST['password'];
 
   $stmt->setFetchMode(PDO::FETCH_CLASS, 'User');
   $stmt->execute();
@@ -46,23 +44,3 @@ function updateUserinfo($profileName)
 }
 
 
-/////==========================  test script !!!!! ================================
-
-// $email = $_POST['email'];
-//   $password = $_POST['password'];
-//   global $pdo;
-
-//   $q = "SELECT * FROM users WHERE email = ?";
-//   $stmt = $pdo->prepare($q);
-//   $stmt->bindParam(1, $email);
-
-  
-//    $stmt->execute();
-//    $user =$stmt->fetch(PDO::FETCH_ASSOC);
-
-//     var_dump($user['password']); 
-//     var_dump($password);
-
-//    if(password_verify($password, $user['password'])){
-   
-//     echo "success";

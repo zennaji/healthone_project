@@ -14,7 +14,6 @@
                 </div>
                 <div class="control_screen .control_screenC">
 
-                
          
                 <?php foreach ($categ as $data): ?>
                                    <div class="card cates" style="height: 5rem;">
@@ -22,20 +21,11 @@
                                             <li class="list-group-item"><?=$data->id ." " .$data->name  ?></li>
                                         </ul>
                                     </div>
-                                    <?php endforeach ?>
-                                 
-                                
-
-
-
+                                    <?php endforeach ?>                                
                
                 </div>
 
-               
-                
             </div>
-
-
             <!-- Those lines are from dashboard layout -->
             </div>
     </div>

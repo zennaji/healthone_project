@@ -4,8 +4,6 @@
                 <h2>Users</h2>
          
                 <div class="control_screen">
-
-                
          
                 <?php foreach ($user as $data): ?>
                                    <div class="card cates" style="height: 5rem;">
@@ -13,17 +11,8 @@
                                             <li class="list-group-item"><?=$data->id ."| " .$data->name  ?></li>
                                         </ul>
                                     </div>
-                                    <?php endforeach ?>
-                                 
-                                
-
-
-
-               
-                </div>
-
-               
-                
+                                    <?php endforeach ?>              
+                </div>              
             </div>
             
             <!-- Those lines are from dashboard layout -->

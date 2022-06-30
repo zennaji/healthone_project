@@ -3,8 +3,7 @@
 <?php
 include_once(TEMPLATE_ROOT . "/defaults/head.php");
 
-// array makem om de error message hier op te slaan.
-$errors = [
+ $errors = [
     'currentPassError' => '',
     'newPassError' => '',
     'verPassError' => '',
@@ -46,30 +45,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
         }
 
-        // validation : of er geen errors zijn 
-        if (!array_filter($errors)) {
+         if (!array_filter($errors)) {
 
-            var_dump($new_hashed_password);
-            var_dump($activeEmail);
-            // $q = "INSERT INTO users (name, email, password) VALUES (:name, :email, :password)";
-            // $q = "UPDATE users SET password = '$new_hashed_password' WHERE email = '$activeEmail";
+            // var_dump($new_hashed_password);
+            // var_dump($activeEmail);
             $q = "UPDATE `users` SET `password` = '$new_hashed_password' WHERE `users`.`email` =" . "'$activeEmail'";
             $stmt = $pdo->prepare($q);
             $stmt->execute();
-            // // $stmt->bindParam(':email', $activeEmail);
-            // // $stmt->bindParam(':password', $hashed_password);
+          
+ 
 
-            // $name = $_POST['name'];
-            // $email = $_POST['email'];
-            // $password = $_POST['password'];
-            // $passConfirm = $_POST['passConfirm'];
-
-            // if ($newPass == $verPass) {
-            //     $new_hashed_password = password_hash($newPass, PASSWORD_DEFAULT);
-            //     echo "uw wachtwoord is veranderd";
-            // } else {
-            //     $errors['newPass'] = 'De wachtwoord komt niet overeen !';
-            // }
+            
+                echo "<h3 >Uw wachtwoord is succesvol gewijzigd !</h3>";
+             
         }
     }
 }
@@ -90,11 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <div class="profile_details">
                 <div class="profile_header">
                     <img src="https://picsum.photos/200/ " width="160px">
-                    <!--<input type="file">
-                    <div class="profile_foto_icons">
-                        <!-- <i class=' far fa-trash-alt'></i> -->
-                    <!-- <i class="fas fa-camera"></i>
-                    </div> -->
+                     
                     <h3><?= $_SESSION["name"]; ?></h5>
                 </div>
                 <div class="profile_body">

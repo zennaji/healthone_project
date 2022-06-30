@@ -9,15 +9,14 @@ include_once('defaults/head.php');
 
         <?php
         include_once('defaults/menu.php');
-        // array makem om de error message hier op te slaan.
+        // array makem om de error messages hier op te slaan.
         //session_start();
         $errorsLogin = [
             'emailError' => '',
             'passwordError' => '',
         ];
         if (isset($_POST['login'])) {
-            // $name=""; $email= ""; $password="";
-
+ 
             //email validation
             if (isset($_POST['email'])) {
                 $email = strip_tags($_POST['email']);
@@ -43,19 +42,8 @@ include_once('defaults/head.php');
                 // var_dump($count);
                 if ($count > 0) {
                     $user = $login->fetch();
-
-
-                    // $password_hash = substr($password_hash, 0, 60);
-                    // echo strlen($password_hash);
-                    //test hash pass
-                    // $test = password_hash($password, PASSWORD_DEFAULT);
-                    // echo "<br>";
-                    // print_r($test);
-
                     if (password_verify($password, $user->password)) {
                         // echo "wachtwoord is correct";
-
-
                         $_SESSION["login"] = true;
                         $_SESSION["id"] = $user->id;
                         $_SESSION["name"] = $user->name;

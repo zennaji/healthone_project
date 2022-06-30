@@ -32,7 +32,7 @@
         </div>
 
     </div>
-    <!-- commentaa div -->
+    <!-- commentaar div -->
     <div class="commentaar scroll center">
 
         <div class="com-text ">

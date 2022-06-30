@@ -34,5 +34,4 @@ include_once(TEMPLATE_ROOT . "/defaults/head.php");
             <!-- 2de side -->
 
         
-<!-- <script src="/js/script.js"></script>
-<script src="/js/bootstrap.bundle.js"></script> -->
+ 

@@ -18,22 +18,6 @@ include_once(TEMPLATE_ROOT . "/defaults/head.php");
             <h5> <a href="/user/profile">LIDMAATSCHAP</a></h5>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <?php include_once(TEMPLATE_ROOT . "/defaults/footer.php");  ?>
     </div>
 </body>

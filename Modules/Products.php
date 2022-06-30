@@ -33,7 +33,6 @@ function    getProducts2()
 function updateProduct($prodName, $prodImg, $prodDescription, $id)
 {
     global $pdo;
-    // $query = $pdo->prepare("UPDATE `product` SET name = $prodName, picture = $prodImg, description =  $prodDescription WHERE id= '14'"); ($name,$description,$stars,$userId,$productId
     $query = $pdo->prepare("UPDATE `product` SET `name`='$prodName',`picture`='$prodImg',`description`='$prodDescription' WHERE id =  $id ");
     $query->execute();
     $request = $query;
@@ -43,7 +42,6 @@ function updateProduct($prodName, $prodImg, $prodDescription, $id)
 function updateProductWithoutPic($prodName, $prodDescription, $id)
 {
     global $pdo;
-    // $query = $pdo->prepare("UPDATE `product` SET name = $prodName, picture = $prodImg, description =  $prodDescription WHERE id= '14'"); ($name,$description,$stars,$userId,$productId
     $query = $pdo->prepare("UPDATE `product` SET `name`='$prodName',`description`='$prodDescription' WHERE id =  $id ");
     $query->execute();
     $request = $query;
